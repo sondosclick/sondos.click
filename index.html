@@ -16,7 +16,7 @@ title: Home
     {% raw %}{% for post in site.posts %}{% endraw %}
       <article class="post-preview">
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p class="meta">{{ post.date | date: "%B %-d, %Y" }} {% raw %}{% if post.tags %}{% endraw %} • {{ post.tags | default:[] | array_to_sentence_string }}{% raw %}{% endif %}{% endraw %}</p>
+        <p class="meta">{{ post.date | date: "%B %-d, %Y" }} {% raw %}{% if post.tags %}{% endraw %} • {{ post.tags | default:'' | array_to_sentence_string }}{% raw %}{% endif %}{% endraw %}</p>
         <div class="excerpt">{{ post.excerpt | markdownify }}</div>
         <p><a class="read-more" href="{{ post.url | relative_url }}">Read →</a></p>
       </article>
