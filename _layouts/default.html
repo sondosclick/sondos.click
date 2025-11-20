@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title }} — {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="site">
+    <nav class="nav">
+      <div class="wrap">
+        <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <div class="nav-right">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="https://github.com/sondosclick/sondos.click" target="_blank" rel="noopener">Repo</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© {{ site.author.name }} • {{ site.slogan }}</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
