@@ -1,7 +1,7 @@
 title: "sondos.click"
 email: ""
 description: "A personal IT blog: A dos Clicks de Producción — sarcastic takes on cloud & AI."
-baseurl: "" # set if serving from /repo-name
+baseurl: "/sondos.click" # set if serving from /repo-name
 url: "https://sondosclick.github.io" # optional; GitHub Pages will set actual URL
 slogan: "A dos Clicks de Producción"
 author:
@@ -9,3 +9,4 @@ author:
 theme: minima
 paginate: 10
 plugins: []
+permalink: "/:categories/:title/"
