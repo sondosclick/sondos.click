@@ -53,6 +53,7 @@ bundle exec jekyll serve --livereload
 
 ## Troubleshooting
 - If CSS or posts show 404s on the GitHub Pages site, ensure `_config.yml` has `baseurl: "/<repo-name>"` when hosting at `https://<user>.github.io/<repo-name>/`. In this repo it is set to `/sondos.click`.
+- If you've recently changed `permalink` format (for example switching to `/:categories/:title/`), old URLs that include dates will no longer work. You chose to keep the new permalink scheme without redirects — be aware external links pointing at the old date-based URLs will 404. Consider updating those links where possible.
 - If the workflow fails while pushing to `gh-pages` with a 403, check `Workflow permissions` (must be **Read and write**) and branch protection rules for `gh-pages`.
 - If eventmachine or other native gems fail to build locally, install system build dependencies (see `Local preview` section). Using the CI avoids local native build issues.
 
