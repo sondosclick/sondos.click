@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Installing the Zscaler Root CA on openSUSE Tumbleweed (WSL Edition) — sondos.click</title>
+  <meta name="description" content="A personal IT blog: A dos Clicks de Producción — sarcastic takes on cloud & AI.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="site">
+    <nav class="nav">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <span class="avatar" aria-hidden="true">SC</span>
+          <span class="brand-text">sondos.click</span>
+        </a>
+        <div class="nav-right">
+          <a href="/">Home</a>
+          <a href="https://github.com/sondosclick/sondos.click" target="_blank" rel="noopener">Repo</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <article class="wrap post">
+  <header class="post-header">
+    <h1>Installing the Zscaler Root CA on openSUSE Tumbleweed (WSL Edition)</h1>
+    <p class="meta">November 21, 2025 • Zscaler, Certificates, openSUSE, WSL, and Troubleshooting</p>
+  </header>
+
+  <div class="post-content">
+    <h1 id="installing-the-zscaler-root-ca-on-opensuse-tumbleweed-wsl-edition">Installing the Zscaler Root CA on openSUSE Tumbleweed (WSL Edition)</h1>
+
+<p>Ah, <strong>Zscaler</strong> — our favorite corporate “friend” who loves to play middleman between us and the internet.<br />
+Because who <em>doesn’t</em> enjoy HTTPS interception at 9 AM on a Monday? 😅</p>
+
+<p>If you’re running <strong>openSUSE Tumbleweed</strong> on <strong>WSL</strong> and everything suddenly breaks — <code class="language-plaintext highlighter-rouge">curl</code>, <code class="language-plaintext highlighter-rouge">wget</code>, <code class="language-plaintext highlighter-rouge">zypper</code>, even <code class="language-plaintext highlighter-rouge">git</code> — congratulations! You’ve just met Zscaler’s SSL inspection. Let’s fix it so you can get back to doing real work (and maybe a bit of complaining).</p>
+
+<hr />
+
+<h2 id="️-step-by-step-making-opensuse-trust-zscaler">⚙️ Step-by-Step: Making openSUSE Trust Zscaler</h2>
+
+<p>openSUSE uses <strong>p11-kit</strong> and the <code class="language-plaintext highlighter-rouge">update-ca-certificates</code> system to manage trusted roots.<br />
+We’ll show you two easy ways to install that corporate CA certificate (before Zscaler ruins your day again).</p>
+
+<hr />
+
+<h3 id="️-option-1-use-trust-anchor-recommended">🧙‍♂️ Option 1: Use <code class="language-plaintext highlighter-rouge">trust anchor</code> (Recommended)</h3>
+
+<ol>
+  <li>
+    <p><strong>Download the Zscaler Root CA certificate</strong></p>
+
+    <p>Grab it from your corporate SharePoint or the ZIA Admin Portal (usually a <code class="language-plaintext highlighter-rouge">.pem</code> or <code class="language-plaintext highlighter-rouge">.crt</code> file).<br />
+Example (fictional) link:<br />
+<a href="https://example.com/sites/Zscaler/Zscaler_Root_CA.pem">Zscaler_Root_CA.pem</a></p>
+  </li>
+  <li>
+    <p><strong>Add it to the system trust store</strong></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>trust anchor ~/Zscaler_Root_CA.pem
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Verify it worked</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> trust list | <span class="nb">grep </span>Zscaler
+</code></pre></div>    </div>
+
+    <p>If you see the certificate listed as an anchor — you’re golden!</p>
+  </li>
+</ol>
+
+<h3 id="-option-2-manually-copy-and-update">🧰 Option 2: Manually Copy and Update</h3>
+
+<ol>
+  <li>
+    <p>Move the certificate to the anchors directory</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">sudo cp </span>Zscaler_Root_CA.pem /etc/pki/trust/anchors/
+</code></pre></div>    </div>
+
+    <p>(You can also use /usr/share/pki/trust/anchors/ for system-level trust.)</p>
+  </li>
+  <li>
+    <p>Regenerate the CA store</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update-ca-certificates
+</code></pre></div></div>
+
+<ol>
+  <li>Celebrate. Maybe sarcastically.
+Your Linux tools should now stop complaining about “unknown issuer” errors. 🎉</li>
+</ol>
+
+<hr />
+
+<h3 id="️️-why-this-matters">🕵️‍♀️ Why This Matters</h3>
+
+<p>Zscaler intercepts HTTPS traffic, re-signs it with its own root certificate, and pretends it’s doing you a favor.
+Without trusting that CA, every secure connection fails miserably.
+Adding the cert ensures your tools — curl, wget, zypper, pip, etc. — behave again.</p>
+
+<h3 id="-enterprise-notes">🔍 Enterprise Notes</h3>
+
+<ul>
+  <li>
+    <p>Internal docs usually recommend copying the cert to /etc/ssl/certs/ca-certificates.crt or automating this with scripts.</p>
+  </li>
+  <li>
+    <p>For containers, Git, or Python, you might need to append the cert to their own CA bundles manually.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>(Yes, even Docker doesn’t escape Zscaler’s reach. 🧟‍♂️)</p>
+</blockquote>
+
+<h3 id="-quick-trust-check">✅ Quick Trust Check</h3>
+
+<p>Run:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl s_client <span class="nt">-connect</span> example.com:443 <span class="nt">-showcerts</span>
+</code></pre></div></div>
+
+<p>If you don’t see “unknown issuer,” congrats — your system now trusts Zscaler (begrudgingly).</p>
+
+<h3 id="-key-takeaways">🧠 Key Takeaways</h3>
+
+<ul>
+  <li>Zscaler breaks SSL. We fix SSL. Circle of life.</li>
+  <li>Use sudo trust anchor for the cleanest install on openSUSE.</li>
+  <li>Don’t forget to verify — trust, but verify (literally).</li>
+  <li>Optional: complain to IT for deploying Zscaler in the first place. 😉</li>
+</ul>
+
+<h3 id="-useful-links">🔗 Useful Links</h3>
+
+<ul>
+  <li>
+    <p>openSUSE Certificate Management Docs: https://en.opensuse.org/SDB:Administration_of_Trusted_CAs</p>
+  </li>
+  <li>
+    <p>Zscaler Support Portal: https://help.zscaler.com/ (for when you need to cry in corporate)</p>
+  </li>
+</ul>
+
+  </div>
+
+  <footer class="post-footer">
+    <p><a href="/">← Back to home</a></p>
+  </footer>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© sondosclick • A dos Clicks de Producción</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

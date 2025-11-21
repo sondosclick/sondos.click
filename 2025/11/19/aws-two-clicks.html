@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AWS in Two Clicks: An embarrassingly simple EC2 launch — sondos.click</title>
+  <meta name="description" content="A personal IT blog: A dos Clicks de Producción — sarcastic takes on cloud & AI.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="site">
+    <nav class="nav">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <span class="avatar" aria-hidden="true">SC</span>
+          <span class="brand-text">sondos.click</span>
+        </a>
+        <div class="nav-right">
+          <a href="/">Home</a>
+          <a href="https://github.com/sondosclick/sondos.click" target="_blank" rel="noopener">Repo</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <article class="wrap post">
+  <header class="post-header">
+    <h1>AWS in Two Clicks: An embarrassingly simple EC2 launch</h1>
+    <p class="meta">November 19, 2025 • aws, ec2, and tutorial</p>
+  </header>
+
+  <div class="post-content">
+    <p>Sometimes you don’t need Terraform, CloudFormation, or an orchestration framework. You just need a VM and a strong coffee.</p>
+
+<p>Quick steps (AWS CLI):</p>
+
+<ol>
+  <li>Create a keypair:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws ec2 create-key-pair --key-name my-key --query 'KeyMaterial' --output text &gt; my-key.pem
+chmod 600 my-key.pem
+</code></pre></div>    </div>
+  </li>
+  <li>Find latest Amazon Linux 2 AMI:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AMI=$(aws ec2 describe-images --owners amazon \
+  --filters "Name=name,Values=amzn2-ami-hvm-*-x86_64-gp2" \
+  --query 'Images | sort_by(@, &amp;CreationDate)[-1].ImageId' --output text)
+</code></pre></div>    </div>
+  </li>
+  <li>Launch:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws ec2 run-instances --image-id $AMI --count 1 --instance-type t3.micro \
+  --key-name my-key --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=two-click-test}]'
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Yes, it’s primitive. Yes, sometimes primitive is production-viable. Add an AMI lookup function, or don’t.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <p><a href="/">← Back to home</a></p>
+  </footer>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© sondosclick • A dos Clicks de Producción</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
