@@ -9,3 +9,4 @@ author:
 theme: minima
 paginate: 10
 plugins: []
+permalink: "/:categories/:title/"
