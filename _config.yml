@@ -1,4 +1,3 @@
----
 title: "sondos.click"
 email: ""
 description: "A personal IT blog: A dos Clicks de Producción — sarcastic takes on cloud & AI."
@@ -10,4 +9,3 @@ author:
 theme: minima
 paginate: 10
 plugins: []
----

@@ -10,11 +10,13 @@
 
 *{box-sizing:border-box}
 body{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   margin:0;
   color:var(--text);
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbfc 100%);
-  line-height:1.6;
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
 .wrap{
@@ -40,14 +42,39 @@ body{
 .nav a{ color:var(--muted); margin-left:1rem; text-decoration:none}
 .nav a:hover{ color:var(--accent)}
 
+.nav{ box-shadow: 0 4px 18px rgba(11,17,20,0.04); }
+
+.brand{ display:flex; align-items:center; gap:0.75rem }
+.avatar{
+  width:36px;
+  height:36px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:white;
+  font-weight:700;
+  border-radius:50%;
+  box-shadow: 0 2px 8px rgba(11,17,20,0.08);
+  font-size:0.9rem;
+}
+.brand-text{ font-size:1rem; color:var(--text); text-decoration:none }
+
+/* improve typography using Inter */
+body{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui; }
+
+.hero{
 .hero{
   background: linear-gradient(90deg, rgba(10,163,163,0.06), rgba(255,122,89,0.03));
   border-bottom: 1px solid rgba(10,163,163,0.06);
-  padding: 3rem 0;
+  padding: 4rem 0;
+  margin-bottom: 1rem;
 }
-.hero h1{ margin:0; font-size:2rem; color:var(--text) }
+.hero h1{ margin:0; font-size:2.25rem; color:var(--text); letter-spacing:-0.5px }
 .slogan{ color:var(--accent2); font-weight:700; margin-top:.25rem}
-.lead{ color:var(--muted); margin-top:.5rem}
+.lead{ color:var(--muted); margin-top:.5rem; max-width:760px }
+
+.hero .wrap{ display:flex; flex-direction:column; gap:0.5rem }
 
 .posts .post-preview{
   background: white;
@@ -56,6 +83,8 @@ body{
   margin-bottom:1rem;
   border-radius: var(--radius);
 }
+.posts .post-preview{ transition: transform .18s ease, box-shadow .18s ease }
+.posts .post-preview:hover{ transform: translateY(-4px); box-shadow: 0 8px 30px rgba(11,17,20,0.06) }
 .post-preview h2{ margin:0 0 .25rem 0; font-size:1.25rem }
 .post-preview a{ text-decoration:none; color:var(--text) }
 .post-preview .meta{ color:var(--muted); font-size:.9rem; margin-bottom:.5rem }
@@ -69,6 +98,8 @@ body{
 .post-content{ margin-top:1rem; background:transparent; }
 .post-content pre{ background:#0b1220;color:#e6f0f0;padding:1rem;border-radius:6px; overflow:auto;font-family:Menlo,monospace; font-size:0.9rem }
 .post-footer{ margin-top:2rem; color:var(--muted) }
+
+.wrap{ transition: padding .15s ease }
 
 .site-footer{ border-top:1px solid #e6eef0; padding:1rem 0; background:white; text-align:center; color:var(--muted) }
 @media (max-width:600px){
