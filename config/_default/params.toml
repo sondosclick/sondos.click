@@ -1,0 +1,26 @@
+colorScheme = "avocado"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+enableSearch = true
+mainSections = ["posts"]
+
+[homepage]
+  layout = "profile"
+  showRecent = true
+  recentLimit = 5
+
+[article]
+  showDate = true
+  showReadingTime = true
+  showTableOfContents = true
+
+[author]
+  name = "Sondos"
+  headline = "Building small things with care."
+  bio = "A personal notebook for ideas, experiments, and stories."
+
+[[author.links]]
+  github = "https://github.com/sondosclick"
+
+[[author.links]]
+  linkedin = "https://www.linkedin.com/"
