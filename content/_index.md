@@ -1,6 +1,6 @@
 ---
-title: "Sondos Click"
-description: "Notes, essays, and experiments."
+title: "Sondos Clicks"
+description: "A dos clicks de PRO"
 ---
 
-Welcome to my corner of the web. Here I share short essays, project notes, and quiet observations.
+AWS, cloud e IA: todo perfecto, nada falla, y yo tampoco me río (mucho).
