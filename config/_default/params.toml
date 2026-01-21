@@ -15,9 +15,9 @@ mainSections = ["posts"]
   showTableOfContents = true
 
 [author]
-  name = "Sondos"
-  headline = "Building small things with care."
-  bio = "A personal notebook for ideas, experiments, and stories."
+  name = "sodosclicks"
+  headline = "A dos clicks de PRO"
+  bio = "Cuaderno simple de ideas, historias y pequeños experimentos… con la seriedad justa y una pizca de ironía."
 
 [[author.links]]
   github = "https://github.com/sondosclick"

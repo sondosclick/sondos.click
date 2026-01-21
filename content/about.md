@@ -2,6 +2,6 @@
 title: "About"
 ---
 
-I am Sondos. This site is a simple log of ideas, stories, and small experiments.
+Este sitio es un cuaderno simple de ideas, historias y pequeños experimentos… con la seriedad justa y una pizca de ironía.
 
-If you want to collaborate or say hello, you can reach me on GitHub.
+Si quieres colaborar o saludar, me encuentras en GitHub.
