@@ -1,9 +1,7 @@
 baseURL = "https://sondos.click/"
 languageCode = "en-us"
-title = "Sondos Click"
+title = "Sondos Clicks"
 enableRobotsTXT = true
-
-theme = "github.com/nunocoracao/blowfish/v2"
 
 [module]
   [[module.imports]]
