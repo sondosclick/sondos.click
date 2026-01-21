@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Sondos Click"
 enableRobotsTXT = true
 
-theme = "blowfish"
+theme = "github.com/nunocoracao/blowfish/v2"
 
 [module]
   [[module.imports]]
