@@ -1,5 +1,5 @@
-colorScheme = "avocado"
-defaultAppearance = "light"
+colorScheme = "github"
+defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
 mainSections = ["posts"]
@@ -15,7 +15,7 @@ mainSections = ["posts"]
   showTableOfContents = true
 
 [author]
-  name = "sodosclicks"
+  name = "sondosclicks"
   headline = "A dos clicks de PRO"
   bio = "Cuaderno simple de ideas, historias y pequeños experimentos… con la seriedad justa y una pizca de ironía."
 
