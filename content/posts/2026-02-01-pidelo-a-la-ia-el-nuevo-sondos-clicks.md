@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pídeselo a la IA. El nuevo sondosclicks."
-date: 2026-01-22
+date: 2026-02-01
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Productividad, Complejidad, Pensamiento Crítico, Automatización]
 description: "Por qué “pídeselo a la IA” es el nuevo “son dos clics” y cómo la complejidad no desaparece, solo cambia de lugar."
