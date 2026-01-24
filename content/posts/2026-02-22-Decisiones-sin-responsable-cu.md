@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Decisiones sin responsable: cuando nadie decide, pero alguien paga"
+date: 2026-02-22
+categories: [IA, Tecnología, Cultura]
+tags: [IA, Responsabilidad, Gobernanza, Complejidad]
+description: "Cómo delegar en la IA diluye la responsabilidad y redefine quién decide en una organización."
+---
+
 # Decisiones sin responsable: cuando nadie decide, pero alguien paga
 
 Hay un momento, casi imperceptible, en el que una organización deja de decidir como siempre lo había hecho y empieza a hacerlo de otra forma. No hay anuncio oficial ni comunicado interno. No hay un “antes y después” claro. Simplemente, un día, alguien propone una idea y la respuesta es:
@@ -128,4 +137,3 @@ Y la fragilidad, cuando escala, no suele dar segundas oportunidades.
 {{< smallnote >}}
 **Nota**: Este artículo forma parte de una serie que reflexiona sobre el uso real de la IA en entornos profesionales. No pretende frenar su adopción, sino ayudar a utilizarla donde aporta valor y a cuestionarla donde introduce riesgos que aún no estamos midiendo.
 {{< /smallnote >}}
-

@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Epílogo: no es miedo a la IA, es respeto por la complejidad"
+date: 2026-03-29
+categories: [IA, Tecnología, Cultura]
+tags: [IA, Complejidad, Pensamiento Crítico, Responsabilidad]
+description: "Cierre de la serie: no es miedo a la IA, es respeto por la complejidad."
+---
+
 # Epílogo: no es miedo a la IA, es respeto por la complejidad
 
 Si has llegado hasta aquí, hay algo que conviene aclarar antes de seguir.

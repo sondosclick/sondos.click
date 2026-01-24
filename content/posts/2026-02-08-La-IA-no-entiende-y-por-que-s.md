@@ -1,3 +1,12 @@
+---
+layout: post
+title: "La IA no entiende (y por qué seguimos obedeciéndola)"
+date: 2026-02-08
+categories: [IA, Tecnología, Cultura]
+tags: [IA, Pensamiento Crítico, Complejidad, Autoridad]
+description: "Por qué la seguridad con la que responde la IA no implica comprensión y cómo eso nos lleva a obedecerla."
+---
+
 # La IA no entiende (y por qué seguimos obedeciéndola)
 
 Si algo hemos aprendido rápido sobre la IA es que **responde con mucha seguridad**.  
