@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Cuando todo funciona… y aun así vamos mal"
+date: 2026-03-22
+categories: [IA, Tecnología, Cultura]
+tags: [IA, Riesgo, Operaciones, Complejidad]
+description: "Qué pasa cuando todo parece ir bien, pero el sistema se está degradando por debajo."
+---
+
 # Cuando todo funciona… y aun así vamos mal
 
 Hay pocos momentos más peligrosos en una organización tecnológica que aquel en el que todo parece ir bien.

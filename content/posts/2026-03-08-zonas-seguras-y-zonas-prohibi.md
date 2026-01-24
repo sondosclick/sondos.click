@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Zonas seguras y zonas prohibidas: dónde la IA ayuda y dónde estorba"
+date: 2026-03-08
+categories: [IA, Tecnología, Cultura]
+tags: [IA, Riesgo, Decisiones, Automatización]
+description: "Un mapa práctico para decidir dónde la IA aporta valor y dónde puede estorbar."
+---
+
 # Zonas seguras y zonas prohibidas: dónde la IA ayuda y dónde estorba
 
 Después de hablar de simplificación, autoridad, sesgos y responsabilidad, suele aparecer una reacción comprensible:
