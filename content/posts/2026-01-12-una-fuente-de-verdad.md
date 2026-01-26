@@ -5,9 +5,12 @@ draft: false
 tags: ["git", "github", "gitlab", "devops", "workflow"]
 categories: ["guías"]
 description: "Procedimiento para configurar un repo local con un remoto llamado 'remote' que haga push a GitHub, GitLab o ambos, y para sincronizar ramas."
+featureimage: "/images/posts/2026-01-12-una-fuente-de-verdad/feature.svg"
 ---
 
 # Git: enviar el mismo código a GitHub y GitLab desde un único repo local (remoto llamado `remote`)
+
+![Ilustracion de un repo que alimenta dos remotos](/images/posts/2026-01-12-una-fuente-de-verdad/feature.svg)
 
 ¿Quieres tener **un solo repo local** y empujar a **GitHub y GitLab** sin romper nada?  
 Aquí va una guía rápida y sin dramas. 😎

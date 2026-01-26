@@ -5,9 +5,12 @@ date: 2026-03-08
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Riesgo, Decisiones, Automatización]
 description: "Un mapa práctico para decidir dónde la IA aporta valor y dónde puede estorbar."
+featureimage: "/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.svg"
 ---
 
 # Zonas seguras y zonas prohibidas: dónde la IA ayuda y dónde estorba
+
+![Ilustracion de zonas seguras y limites](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.svg)
 
 Después de hablar de simplificación, autoridad, sesgos y responsabilidad, suele aparecer una reacción comprensible:
 

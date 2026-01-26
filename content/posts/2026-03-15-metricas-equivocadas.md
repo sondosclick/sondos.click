@@ -5,9 +5,12 @@ date: 2026-03-15
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Métricas, Productividad, Complejidad]
 description: "Por qué medir velocidad con IA nos aleja del valor y aumenta la complejidad."
+featureimage: "/images/posts/2026-03-15-metricas-equivocadas/feature.svg"
 ---
 
 # Métricas equivocadas: por qué medir velocidad nos está llevando al lugar equivocado
+
+![Ilustracion de graficas en conflicto](/images/posts/2026-03-15-metricas-equivocadas/feature.svg)
 
 Si algo nos gusta en tecnología casi tanto como una herramienta nueva, es medirla.  
 Y si algo nos tranquiliza más que medir, es ver una gráfica subir hacia la derecha.
