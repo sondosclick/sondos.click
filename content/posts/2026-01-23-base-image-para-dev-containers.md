@@ -5,9 +5,12 @@ date: 2026-01-23
 categories: [DevOps, Contenedores, VS Code]
 tags: [Dev Containers, Docker, GitHub Actions, Proxy, Certificados, CI/CD]
 description: "Cómo crear y mantener una imagen base corporativa para Dev Containers, con automatización mensual y publicación en registry."
+featureimage: "/images/posts/2026-01-23-base-image-para-dev-containers/feature.svg"
 ---
 
 # Una imagen base para VS Code Dev Containers (y cómo no volverte loco manteniéndola)
+
+![Ilustracion de capas y contenedores](/images/posts/2026-01-23-base-image-para-dev-containers/feature.svg)
 
 Si usas **VS Code Dev Containers** en un entorno corporativo (proxy, Zscaler, certificados internos, mirrors raros…), probablemente ya te has peleado con errores tipo:
 
