@@ -5,9 +5,12 @@ date: 2026-03-01
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Aprendizaje, Talento, Complejidad]
 description: "El riesgo de que una generación aprenda a ejecutar sin entender en la era de la IA."
+featureimage: "/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.svg"
 ---
 
 # Juniors, aprendizaje y el riesgo de una generación que no entiende lo que funciona
+
+![Ilustracion sobre aprendizaje por capas](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.svg)
 
 Toda generación aprende con las herramientas que tiene a mano.  
 Nosotros aprendimos con buscadores, foros, documentación incompleta y respuestas que empezaban con “esto no es buena práctica, pero…”.

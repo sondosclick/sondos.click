@@ -5,9 +5,12 @@ date: 2026-01-01
 categories: [Linux, openSUSE, Networking]
 tags: [Zscaler, Certificates, openSUSE, WSL, Troubleshooting]
 description: "How to install the Zscaler CA certificate on openSUSE Tumbleweed running under WSL — so your SSL errors finally stop yelling at you."
+featureimage: "/images/posts/2026-01-01-zscaler-root-ca-opensuse-wsl/feature.svg"
 ---
 
 # Installing the Zscaler Root CA on openSUSE Tumbleweed (WSL Edition)
+
+![Illustration of certificate trust and network paths](/images/posts/2026-01-01-zscaler-root-ca-opensuse-wsl/feature.svg)
 
 Ah, **Zscaler** — our favorite corporate “friend” who loves to play middleman between us and the internet.  
 Because who *doesn’t* enjoy HTTPS interception at 9 AM on a Monday? 😅  
