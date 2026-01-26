@@ -5,9 +5,12 @@ date: 2026-02-15
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Sesgos, Escala, Riesgo]
 description: "Qué pasa cuando la IA se equivoca a escala y sus sesgos se convierten en norma."
+featureimage: "/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.svg"
 ---
 
 # Cuando la caja se equivoca: sesgos, escala y normalización
+
+![Ilustracion sobre errores amplificados](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.svg)
 
 Hasta ahora hemos hablado de simplificación y de autoridad.  
 Del “pídeselo a la IA” y de por qué obedecemos a algo que no entiende.  

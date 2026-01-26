@@ -18,6 +18,7 @@ mainSections = ["posts"]
   name = "sondosclicks"
   headline = "A dos clicks de PRO"
   bio = "Cuaderno simple de ideas, historias y pequeños experimentos… con la seriedad justa y una pizca de ironía."
+  image = "images/brand/sondos-avatar.svg"
 
 [[author.links]]
   github = "https://github.com/sondosclick"

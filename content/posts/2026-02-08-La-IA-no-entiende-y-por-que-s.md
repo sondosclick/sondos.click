@@ -5,9 +5,12 @@ date: 2026-02-08
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Pensamiento Crítico, Complejidad, Autoridad]
 description: "Por qué la seguridad con la que responde la IA no implica comprensión y cómo eso nos lleva a obedecerla."
+featureimage: "/images/posts/2026-02-08-la-ia-no-entiende/feature.svg"
 ---
 
 # La IA no entiende (y por qué seguimos obedeciéndola)
+
+![Ilustracion sobre respuestas seguras sin comprension](/images/posts/2026-02-08-la-ia-no-entiende/feature.svg)
 
 Si algo hemos aprendido rápido sobre la IA es que **responde con mucha seguridad**.  
 No duda, no titubea y rara vez dice “no lo sé” de forma incómoda. Contesta con frases bien estructuradas, argumentos ordenados y un tono que inspira confianza.

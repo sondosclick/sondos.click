@@ -5,9 +5,12 @@ date: 2026-02-22
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Responsabilidad, Gobernanza, Complejidad]
 description: "Cómo delegar en la IA diluye la responsabilidad y redefine quién decide en una organización."
+featureimage: "/images/posts/2026-02-22-decisiones-sin-responsable/feature.svg"
 ---
 
 # Decisiones sin responsable: cuando nadie decide, pero alguien paga
+
+![Ilustracion sobre decisiones desconectadas](/images/posts/2026-02-22-decisiones-sin-responsable/feature.svg)
 
 Hay un momento, casi imperceptible, en el que una organización deja de decidir como siempre lo había hecho y empieza a hacerlo de otra forma. No hay anuncio oficial ni comunicado interno. No hay un “antes y después” claro. Simplemente, un día, alguien propone una idea y la respuesta es:
 
