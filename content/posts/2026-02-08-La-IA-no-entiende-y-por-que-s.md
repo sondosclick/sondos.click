@@ -18,8 +18,6 @@ Y ahí empieza el problema.
 
 Porque una cosa es que un sistema genere respuestas convincentes y otra muy distinta es que **entienda** lo que está diciendo. Confundir ambas cosas es cómodo. También es peligroso.
 
----
-
 Durante años hemos asociado la autoridad al lenguaje.  
 Quien explica bien, quien articula ideas con claridad, quien responde rápido… suele parecer competente. La IA juega exactamente con esa heurística humana. Habla bien, luego debe saber de lo que habla. Sonríe —metafóricamente—, luego podemos confiar.
 
@@ -33,8 +31,6 @@ No entiende responsabilidad.
 La caja solo calcula qué respuesta es más probable dadas unas entradas. Nada más. Nada menos.
 
 Y aun así, cada día, le pedimos decisiones.
-
----
 
 Imaginemos otra escena completamente ficticia.
 
@@ -52,8 +48,6 @@ Sino cuando **nadie se sintió responsable de contradecir la respuesta**.
 La caja no decidió.  
 Pero todos actuaron como si lo hubiera hecho.
 
----
-
 Aquí aparece una ilusión especialmente peligrosa: la de la **neutralidad**.
 
 Como la caja no tiene intereses visibles, asumimos que es objetiva. Como no tiene emociones, asumimos que no se equivoca por sesgo. Como no tiene ego, asumimos que no impone criterios.
@@ -66,8 +60,6 @@ La caja arrastra:
 - y las limitaciones de un sistema que optimiza probabilidad, no verdad.
 
 Pero como no se enfada, no discute y no levanta la voz, le otorgamos una autoridad que rara vez damos a un humano.
-
----
 
 El problema no es que la IA no entienda.  
 El problema es que **nosotros actuamos como si entendiera**.
@@ -83,8 +75,6 @@ Poco a poco, el criterio humano deja de ser el centro y pasa a ser un mecanismo 
 
 Y a veces, ni eso.
 
----
-
 Este desplazamiento tiene consecuencias que van más allá de lo técnico.
 
 A nivel organizativo, diluye la responsabilidad.  
@@ -95,8 +85,6 @@ Porque la caja no puede explicar por qué ha decidido algo. Solo puede explicar 
 
 Y cuando empezamos a aceptar explicaciones sin comprensión, empezamos a aceptar decisiones sin responsabilidad.
 
----
-
 Quizá por eso resulta tan tentador el mensaje de *“pídeselo a la IA”*.  
 No solo promete eficiencia. Promete alivio. Alivio de pensar, de discutir, de asumir el peso de decidir.
 
@@ -104,8 +92,6 @@ La caja sonríe, responde y nos permite seguir adelante sin fricción.
 
 Pero cada vez que obedecemos sin entender, entrenamos algo más peligroso que un modelo:  
 entrenamos nuestra propia **renuncia al criterio**.
-
----
 
 La IA no entiende.  
 Nunca lo hará en el sentido en que lo necesitamos para delegarle autoridad.
