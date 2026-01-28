@@ -1,0 +1,11 @@
+[author]
+  name = "sondosclicks"
+  headline = "Two clicks away from PRO"
+  bio = "A simple notebook of ideas, stories, and small experiments… with just the right dose of seriousness and a pinch of irony."
+  image = "images/brand/sondos-avatar.svg"
+
+[[author.links]]
+  github = "https://github.com/sondosclick"
+
+[[author.links]]
+  linkedin = "https://www.linkedin.com/"
