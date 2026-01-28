@@ -1,106 +1,107 @@
 ---
 layout: post
-title: "Instalar la Root CA de Zscaler en openSUSE Tumbleweed (edición WSL)"
+title: "Installing the Zscaler Root CA on openSUSE Tumbleweed (WSL Edition)"
 date: 2026-01-01
-categories: [Linux, openSUSE, Redes]
-tags: [Zscaler, Certificados, openSUSE, WSL, Solución de problemas]
-description: "Cómo instalar el certificado CA de Zscaler en openSUSE Tumbleweed bajo WSL — para que por fin dejen de gritar tus errores SSL."
+categories: [Linux, openSUSE, Networking]
+tags: [Zscaler, Certificates, openSUSE, WSL, Troubleshooting]
+description: "How to install the Zscaler CA certificate on openSUSE Tumbleweed running under WSL — so your SSL errors finally stop yelling at you."
 featureimage: "/images/posts/2026-01-01-zscaler-root-ca-opensuse-wsl/feature.svg"
 ---
 
-# Instalar la Root CA de Zscaler en openSUSE Tumbleweed (edición WSL)
+# Installing the Zscaler Root CA on openSUSE Tumbleweed (WSL Edition)
 
-![Ilustración de confianza de certificados y rutas de red](/images/posts/2026-01-01-zscaler-root-ca-opensuse-wsl/feature.svg)
+![Illustration of certificate trust and network paths](/images/posts/2026-01-01-zscaler-root-ca-opensuse-wsl/feature.svg)
 
-Ah, **Zscaler** — nuestro “amigo” corporativo favorito, al que le encanta jugar a intermediario entre nosotros e internet.  
-Porque, claro, ¿a quién *no* le gusta la interceptación HTTPS a las 9 AM de un lunes? 😅
+Ah, **Zscaler** — our favorite corporate “friend” who loves to play middleman between us and the internet.  
+Because who *doesn’t* enjoy HTTPS interception at 9 AM on a Monday? 😅  
 
-Si estás corriendo **openSUSE Tumbleweed** en **WSL** y de repente todo se rompe — `curl`, `wget`, `zypper`, incluso `git` — ¡felicidades! Has conocido la inspección SSL de Zscaler. Vamos a arreglarlo para que puedas volver al trabajo real (y quizá a quejarte un poco).
-
----
-
-## ⚙️ Paso a paso: hacer que openSUSE confíe en Zscaler
-
-openSUSE usa **p11-kit** y el sistema `update-ca-certificates` para gestionar raíces de confianza.  
-Te muestro dos formas sencillas de instalar ese certificado CA corporativo (antes de que Zscaler vuelva a arruinarte el día).
+If you’re running **openSUSE Tumbleweed** on **WSL** and everything suddenly breaks — `curl`, `wget`, `zypper`, even `git` — congratulations! You’ve just met Zscaler’s SSL inspection. Let’s fix it so you can get back to doing real work (and maybe a bit of complaining).
 
 ---
 
-### 🧙‍♂️ Opción 1: usa `trust anchor` (recomendada)
+## ⚙️ Step-by-Step: Making openSUSE Trust Zscaler
 
-1. **Descarga el certificado Root CA de Zscaler**
+openSUSE uses **p11-kit** and the `update-ca-certificates` system to manage trusted roots.  
+We’ll show you two easy ways to install that corporate CA certificate (before Zscaler ruins your day again).
 
-   Búscalo en tu SharePoint corporativo o en el portal de administración de ZIA (suele ser un `.pem` o `.crt`).  
-   Enlace de ejemplo (ficticio):  
+---
+
+### 🧙‍♂️ Option 1: Use `trust anchor` (Recommended)
+
+1. **Download the Zscaler Root CA certificate**
+
+   Grab it from your corporate SharePoint or the ZIA Admin Portal (usually a `.pem` or `.crt` file).  
+   Example (fictional) link:  
    [Zscaler_Root_CA.pem](https://example.com/sites/Zscaler/Zscaler_Root_CA.pem)
 
-2. **Añádelo al almacén de confianza del sistema**
+2. **Add it to the system trust store**
 
     ```bash
    sudo trust anchor ~/Zscaler_Root_CA.pem
     ```
 
-3. **Verifica que funcionó**
+3. Verify it worked
 
     ```bash
     trust list | grep Zscaler
     ```
+    
+    If you see the certificate listed as an anchor — you’re golden!
 
-    Si ves el certificado listado como *anchor* — estás listo.
 
-### 🧰 Opción 2: copiar y actualizar manualmente
+### 🧰 Option 2: Manually Copy and Update
 
-1. Mueve el certificado al directorio de *anchors*
+1. Move the certificate to the anchors directory
 
     ```bash
     sudo cp Zscaler_Root_CA.pem /etc/pki/trust/anchors/
     ```
 
-    (También puedes usar /usr/share/pki/trust/anchors/ para confianza a nivel de sistema.)
+    (You can also use /usr/share/pki/trust/anchors/ for system-level trust.)
 
-2. Regenera el almacén de CA
+2. Regenerate the CA store
 
 ```bash
 sudo update-ca-certificates
 ```
 
-3. Celebra. Quizá con sarcasmo.
-Tus herramientas de Linux deberían dejar de quejarse de errores de “unknown issuer”. 🎉
+3. Celebrate. Maybe sarcastically.
+Your Linux tools should now stop complaining about “unknown issuer” errors. 🎉
 
 ----
 
-### 🕵️‍♀️ Por qué esto importa
+### 🕵️‍♀️ Why This Matters
 
-Zscaler intercepta el tráfico HTTPS, lo re-firma con su propio certificado raíz y finge que te está haciendo un favor.  
-Si no confías en ese CA, cada conexión segura falla miserablemente.  
-Añadir el cert hace que tus herramientas — curl, wget, zypper, pip, etc. — vuelvan a comportarse.
+Zscaler intercepts HTTPS traffic, re-signs it with its own root certificate, and pretends it’s doing you a favor.
+Without trusting that CA, every secure connection fails miserably.
+Adding the cert ensures your tools — curl, wget, zypper, pip, etc. — behave again.
 
-### 🔍 Notas enterprise
+### 🔍 Enterprise Notes
 
-- La documentación interna suele recomendar copiar el cert a /etc/ssl/certs/ca-certificates.crt o automatizarlo con scripts.
+- Internal docs usually recommend copying the cert to /etc/ssl/certs/ca-certificates.crt or automating this with scripts.
 
-- Para contenedores, Git o Python, quizá tengas que añadir el cert a sus propios *CA bundles* manualmente.
+- For containers, Git, or Python, you might need to append the cert to their own CA bundles manually.
 
-> (Sí, ni Docker escapa al alcance de Zscaler. 🧟‍♂️)
+> (Yes, even Docker doesn’t escape Zscaler’s reach. 🧟‍♂️)
 
-### ✅ Comprobación rápida de confianza
+### ✅ Quick Trust Check
 
-Ejecuta:
+Run:
 ```bash
 openssl s_client -connect example.com:443 -showcerts
 ```
 
-Si no ves “unknown issuer”, felicidades — tu sistema ya confía en Zscaler (a regañadientes).
+If you don’t see “unknown issuer,” congrats — your system now trusts Zscaler (begrudgingly).
 
-### 🧠 Ideas clave
+### 🧠 Key Takeaways
 
-- Zscaler rompe SSL. Nosotros arreglamos SSL. Círculo de la vida.
-- Usa `sudo trust anchor` para la instalación más limpia en openSUSE.
-- No olvides verificar — *trust, but verify* (literalmente).
-- Opcional: quejarte a IT por desplegar Zscaler en primer lugar. 😉
+- Zscaler breaks SSL. We fix SSL. Circle of life.
+- Use sudo trust anchor for the cleanest install on openSUSE.
+- Don’t forget to verify — trust, but verify (literally).
+- Optional: complain to IT for deploying Zscaler in the first place. 😉
 
-### 🔗 Enlaces útiles
+### 🔗 Useful Links
 
-- Documentación de gestión de certificados en openSUSE: https://en.opensuse.org/SDB:Administration_of_Trusted_CAs
+- openSUSE Certificate Management Docs: https://en.opensuse.org/SDB:Administration_of_Trusted_CAs
 
-- Portal de soporte de Zscaler: https://help.zscaler.com/ (para cuando necesites llorar en corporativo)
+- Zscaler Support Portal: https://help.zscaler.com/ (for when you need to cry in corporate)

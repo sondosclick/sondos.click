@@ -7,21 +7,44 @@
 }
 
 :root {
+  --sondos-bg: #f5f7fb;
+  --sondos-surface: #ffffff;
+  --sondos-border: #d6deea;
+  --sondos-accent: #2563eb;
+  --sondos-accent-2: #0ea5a4;
+  --sondos-quote-bg: rgba(226, 232, 240, 0.7);
+  --sondos-code-bg: rgba(226, 232, 240, 0.85);
+  --sondos-code-border: rgba(148, 163, 184, 0.35);
+  --sondos-hr-border: rgba(148, 163, 184, 0.35);
+  --sondos-img-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+  --sondos-bg-image:
+    radial-gradient(900px 520px at 10% 10%, rgba(37, 99, 235, 0.14), transparent 60%),
+    radial-gradient(760px 420px at 90% 10%, rgba(14, 165, 164, 0.12), transparent 55%),
+    radial-gradient(880px 520px at 50% 95%, rgba(148, 163, 184, 0.28), transparent 65%);
+}
+
+html.dark {
   --sondos-bg: #0b0f14;
   --sondos-surface: #0f172a;
   --sondos-border: #1f2937;
   --sondos-accent: #60a5fa;
   --sondos-accent-2: #34d399;
+  --sondos-quote-bg: rgba(15, 23, 42, 0.45);
+  --sondos-code-bg: rgba(15, 23, 42, 0.7);
+  --sondos-code-border: rgba(148, 163, 184, 0.25);
+  --sondos-hr-border: rgba(148, 163, 184, 0.2);
+  --sondos-img-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+  --sondos-bg-image:
+    radial-gradient(800px 420px at 10% 10%, rgba(96, 165, 250, 0.18), transparent 60%),
+    radial-gradient(700px 380px at 90% 20%, rgba(52, 211, 153, 0.16), transparent 55%),
+    radial-gradient(900px 520px at 50% 90%, rgba(15, 23, 42, 0.6), transparent 65%);
 }
 
 body {
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
   letter-spacing: -0.01em;
   background-color: var(--sondos-bg);
-  background-image:
-    radial-gradient(800px 420px at 10% 10%, rgba(96, 165, 250, 0.18), transparent 60%),
-    radial-gradient(700px 380px at 90% 20%, rgba(52, 211, 153, 0.16), transparent 55%),
-    radial-gradient(900px 520px at 50% 90%, rgba(15, 23, 42, 0.6), transparent 65%);
+  background-image: var(--sondos-bg-image);
 }
 
 h1,
@@ -42,23 +65,23 @@ a {
 main img,
 .prose img {
   border-radius: 18px;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+  box-shadow: var(--sondos-img-shadow);
 }
 
 .prose blockquote {
   border-left: 4px solid var(--sondos-accent);
-  background: rgba(15, 23, 42, 0.45);
+  background: var(--sondos-quote-bg);
   padding: 0.8rem 1.2rem;
   border-radius: 12px;
 }
 
 .prose code {
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: var(--sondos-code-bg);
+  border: 1px solid var(--sondos-code-border);
   border-radius: 8px;
   padding: 0.1rem 0.35rem;
 }
 
 .prose hr {
-  border-color: rgba(148, 163, 184, 0.2);
+  border-color: var(--sondos-hr-border);
 }
