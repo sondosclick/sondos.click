@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Sobre"
 ---
 
 Este sitio es un cuaderno de ideas, historias y pequeños experimentos sobre cloud, IA, cultura de producto y ese punto en el que la complejidad deja de verse pero sigue mandando.
