@@ -1,5 +1,4 @@
 baseURL = "https://sondos.click/"
-languageCode = "es-es"
 title = "Sondos Clicks"
 enableRobotsTXT = true
 defaultContentLanguage = "es"
@@ -7,16 +6,13 @@ defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.es]
-    languageName = "Español"
+    languageCode = "es"
+    languageName = "ES"
     weight = 1
-    title = "Sondos Clicks"
-    languageCode = "es-es"
-
   [languages.en]
-    languageName = "English"
+    languageCode = "en"
+    languageName = "EN"
     weight = 2
-    title = "Sondos Clicks"
-    languageCode = "en-us"
 
 [module]
   [[module.imports]]
