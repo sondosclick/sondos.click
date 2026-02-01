@@ -1,89 +1,86 @@
 ---
 title: "About"
 ---
+
 ## About – sondos.click
 
-### Sobre este sitio, el cloud y otras cosas que parecen sencillas
+### Sobre cloud, experiencia y la mentira de los “dos clicks”
 
-Hay una mentira piadosa muy extendida en tecnología:
+En tecnología hay una idea que se repite con una constancia admirable:
 que todo es sencillo si sabes dónde hacer click.
 
 Normalmente son *dos clicks*.
-Siempre son *dos clicks*.
 Hasta que no lo son.
 
-**sondos.click** nace precisamente de ahí. De años escuchando que sistemas complejos, frágiles y carísimos se arreglan con la misma facilidad que cambiar el volumen del móvil. Spoiler: no.
+**sondos.click** nace de ahí.
+De años trabajando en sistemas, proyectos y cloud, viendo cómo problemas complejos se resumían alegremente en frases simples. A veces por optimismo. Otras, por desconocimiento. Casi nunca por mala intención.
 
-Este blog existe para contar lo que hay **entre esos dos clicks**.
+Este blog existe para hablar de lo que pasa **entre esos dos clicks**.
 
 ---
 
-### Quién escribe aquí
+### Quién está detrás
 
-No hay foto mirando al horizonte.
-Ni historia de superación.
-Ni gurú.
+Trabajo en **consultoría cloud**, principalmente con **AWS**, y actualmente desempeño el rol de **Technical Manager**: una posición curiosa en la que no lo haces todo, pero necesitas entender casi todo; donde coordinas equipos muy buenos e intentas que lo complicado salga lo más sencillo posible.
 
-Aquí escribe alguien que lleva **demasiados años** trabajando en tecnología como para creerse los atajos milagrosos, pero **los suficientes como para seguir teniendo curiosidad**.
+Llevo muchos años en esto.
+Los suficientes como para haber visto modas ir y venir, tecnologías reinventarse con otro nombre y errores repetirse con una precisión casi científica.
 
-Trabajo en **consultoría cloud**, sobre todo en **AWS**, y actualmente me muevo en ese limbo llamado *Technical Manager*: el sitio donde no tocas todo, pero tienes que entender casi todo; donde coordinas a gente que sabe muchísimo y tu trabajo consiste en que lo complicado parezca razonable.
+Y aun así, sigo teniendo curiosidad.
 
-No siempre lo consigo.
+---
 
-### La obsesión por lo simple (que no es lo mismo que fácil)
+### Simplicidad ≠ facilidad
 
-Con el tiempo he desarrollado cierta alergia a la complejidad innecesaria.
-A los palabros.
-A los diagramas que solo sirven para impresionar.
-A las soluciones que parecen profundas pero no resuelven nada.
+Con el tiempo he aprendido a desconfiar de la complejidad innecesaria.
+De los palabros que no explican nada.
+De las soluciones que suenan profundas pero no resuelven problemas reales.
 
-Me interesa la **simplicidad bien entendida**.
-La que solo aparece cuando conoces el problema a fondo.
+Me interesa la **simplicidad bien trabajada**: la que solo aparece cuando alguien ha entendido el problema a fondo, se ha equivocado varias veces y ha decidido quitar lo que sobraba.
 
-Como los objetos bien diseñados: parecen obvios… hasta que intentas replicarlos.
-O como ciertas arquitecturas en cloud que, vistas desde fuera, “no tienen nada”, pero funcionan justo porque alguien decidió quitar todo lo que sobraba.
+En cloud, como en casi todo, lo difícil no es añadir cosas.
+Lo difícil es saber qué quitar.
 
-Ese proceso —entender, equivocarse, quitar capas, volver a empezar— es de lo que va este sitio.
+---
 
-### Experiencia, errores y memoria larga
+### Experiencia, errores y perspectiva
 
-He trabajado en soporte, en proyectos, en despliegues, en migraciones y en situaciones donde lo peor no era el fallo técnico, sino la prisa por señalar culpables.
+He pasado por soporte, proyectos, despliegues, migraciones y situaciones donde el mayor riesgo no era técnico, sino humano. He visto buenas ideas funcionar y otras igual de bien pensadas fallar estrepitosamente.
 
-He visto ideas brillantes funcionar y otras igual de brillantes arder en producción.
-He aprendido más de lo que salió mal que de lo que salió bien.
-Y sigo pensando que quien no se equivoca, o miente, o no está haciendo nada interesante.
+Si algo te enseña el tiempo en este sector es que:
 
-Después de tantos años, una cosa queda clara:
-la tecnología cambia rápido, pero **los errores se repiten con una precisión admirable**.
+* equivocarse es inevitable,
+* aprender es opcional,
+* y la memoria larga suele ser más valiosa que la última tendencia.
 
-### Qué vas a encontrar aquí (y qué no)
+---
 
-En **sondos.click** encontrarás:
+### Qué encontrarás aquí
 
-* reflexiones sobre cloud y AWS,
-* experiencias reales de proyectos,
-* ideas técnicas explicadas sin épica,
-* y opiniones que no pretenden gustar a todo el mundo.
+En **sondos.click** comparto:
 
-No encontrarás:
+* experiencias reales en proyectos de cloud,
+* reflexiones técnicas sin épica,
+* aprendizajes del día a día,
+* y opiniones personales, claramente marcadas como tales.
 
-* pensamiento positivo aplicado a arquitecturas,
-* promesas de éxito,
-* recetas universales,
-* ni fe ciega en la tendencia del mes.
+No es un blog de motivación.
+No hay promesas.
+No hay recetas universales.
 
-Aquí no se viene a motivarse.
-Se viene a **entender un poco mejor por qué las cosas son como son**.
+Solo observaciones honestas de alguien que sigue intentando entender mejor su trabajo.
 
-### Si has llegado hasta aquí
+---
+
+### Si esto te resulta familiar
 
 Probablemente trabajas en tecnología.
-Probablemente has asentido en reuniones sin saber exactamente de qué se hablaba.
-Probablemente te has preguntado alguna vez si el problema eras tú.
+Probablemente has estado en reuniones donde todo parecía claro… menos para ti.
+Probablemente has pensado alguna vez que el problema eras tú.
 
 No lo eras.
 
-Este blog es para quien sospecha que **no saberlo todo no es un defecto**, sino el punto de partida correcto. Para quien prefiere aprender despacio antes que repetir frases rápidas.
+Este blog es para quien asume que **no saberlo todo es parte del oficio**, y que la experiencia no consiste en tener todas las respuestas, sino en hacer mejores preguntas.
 
 Y para quien ya sabe que, casi nunca, son solo dos clicks.
 ---

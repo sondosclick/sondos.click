@@ -12,9 +12,11 @@ Usually it is *two clicks*.
 It is always *two clicks*.
 Until it is not.
 
-**sondos.click** was born from exactly that. From years of hearing that complex, fragile, and expensive systems can be fixed as easily as changing the volume on your phone. Spoiler: no.
+**sondos.click** was born from exactly that. From years of hearing that complex, fragile, and very expensive systems can be fixed as easily as changing the volume on your phone. Spoiler: no.
 
 This blog exists to tell what lives **between those two clicks**.
+
+---
 
 ### Who writes here
 
@@ -22,9 +24,9 @@ No photo staring at the horizon.
 No comeback story.
 No guru.
 
-Here you will find someone who has spent **too many years** working in technology to believe in miraculous shortcuts, but **enough years to stay curious**.
+Here writes someone who has spent **too many years** working in technology to believe in miraculous shortcuts, but **enough years to stay curious**.
 
-I work in **cloud consulting**, mostly in **AWS**, and these days I sit in that limbo called *Technical Manager*: the place where you do not touch everything, but you have to understand almost everything; where you coordinate people who know a lot and your job is to make the complicated seem reasonable.
+I work in **cloud consulting**, mostly in **AWS**, and these days I live in that limbo called *Technical Manager*: the place where you do not touch everything, but you have to understand almost everything; where you coordinate people who know a lot and your job is to make the complicated seem reasonable.
 
 I do not always succeed.
 
@@ -36,12 +38,12 @@ To diagrams that only exist to impress.
 To solutions that look deep but solve nothing.
 
 I care about **simplicity done right**.
-The kind that only shows up when you know the problem inside out.
+The kind that only appears when you know the problem inside out.
 
 Like well-designed objects: they look obvious... until you try to replicate them.
 Or like certain cloud architectures that, from the outside, "have nothing," but work precisely because someone decided to remove everything extra.
 
-That process - understand, get it wrong, strip layers, start again - is what this site is about.
+That process — understand, get it wrong, strip layers, start again — is what this site is about.
 
 ### Experience, mistakes, and a long memory
 
