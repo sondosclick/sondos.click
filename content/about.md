@@ -1,5 +1,6 @@
 ---
 title: "About"
+date: 2025-11-15
 ---
 
 ## About – sondos.click
@@ -17,8 +18,6 @@ De años trabajando en sistemas, proyectos y cloud, viendo cómo problemas compl
 
 Este blog existe para hablar de lo que pasa **entre esos dos clicks**.
 
----
-
 ### Quién está detrás
 
 Trabajo en **consultoría cloud**, principalmente con **AWS**, y actualmente desempeño el rol de **Technical Manager**: una posición curiosa en la que no lo haces todo, pero necesitas entender casi todo; donde coordinas equipos muy buenos e intentas que lo complicado salga lo más sencillo posible.
@@ -27,8 +26,6 @@ Llevo muchos años en esto.
 Los suficientes como para haber visto modas ir y venir, tecnologías reinventarse con otro nombre y errores repetirse con una precisión casi científica.
 
 Y aun así, sigo teniendo curiosidad.
-
----
 
 ### Simplicidad ≠ facilidad
 
@@ -41,8 +38,6 @@ Me interesa la **simplicidad bien trabajada**: la que solo aparece cuando alguie
 En cloud, como en casi todo, lo difícil no es añadir cosas.
 Lo difícil es saber qué quitar.
 
----
-
 ### Experiencia, errores y perspectiva
 
 He pasado por soporte, proyectos, despliegues, migraciones y situaciones donde el mayor riesgo no era técnico, sino humano. He visto buenas ideas funcionar y otras igual de bien pensadas fallar estrepitosamente.
@@ -52,8 +47,6 @@ Si algo te enseña el tiempo en este sector es que:
 * equivocarse es inevitable,
 * aprender es opcional,
 * y la memoria larga suele ser más valiosa que la última tendencia.
-
----
 
 ### Qué encontrarás aquí
 
@@ -69,8 +62,6 @@ No hay promesas.
 No hay recetas universales.
 
 Solo observaciones honestas de alguien que sigue intentando entender mejor su trabajo.
-
----
 
 ### Si esto te resulta familiar
 

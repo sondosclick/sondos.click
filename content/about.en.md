@@ -1,5 +1,6 @@
 ---
 title: "About"
+date: 2025-11-15
 ---
 ## About – sondos.click
 
@@ -15,8 +16,6 @@ Until it is not.
 **sondos.click** was born from exactly that. From years of hearing that complex, fragile, and very expensive systems can be fixed as easily as changing the volume on your phone. Spoiler: no.
 
 This blog exists to tell what lives **between those two clicks**.
-
----
 
 ### Who writes here
 
