@@ -1,50 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
 
 .small-note {
-  font-size: 0.5em;
+  font-size: 0.8em;
   opacity: 0.8;
   margin-top: 1.5rem;
 }
 
 :root {
-  --sondos-bg: #f5f7fb;
+  --sondos-bg: #f8f7f2;
   --sondos-surface: #ffffff;
-  --sondos-border: #d6deea;
-  --sondos-accent: #2563eb;
-  --sondos-accent-2: #0ea5a4;
-  --sondos-quote-bg: rgba(226, 232, 240, 0.7);
-  --sondos-code-bg: rgba(226, 232, 240, 0.85);
-  --sondos-code-border: rgba(148, 163, 184, 0.35);
-  --sondos-hr-border: rgba(148, 163, 184, 0.35);
-  --sondos-img-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+  --sondos-border: #e4e3de;
+  --sondos-text: #0c0e12;
+  --sondos-text-muted: rgba(12, 14, 18, 0.68);
+  --sondos-accent: #3da9fc;
+  --sondos-accent-2: #e5449f;
+  --sondos-quote-bg: rgba(61, 169, 252, 0.12);
+  --sondos-code-bg: rgba(228, 227, 222, 0.6);
+  --sondos-code-border: rgba(12, 14, 18, 0.12);
+  --sondos-hr-border: rgba(12, 14, 18, 0.12);
+  --sondos-img-shadow: 0 18px 36px rgba(12, 14, 18, 0.12);
   --sondos-bg-image:
-    radial-gradient(900px 520px at 10% 10%, rgba(37, 99, 235, 0.14), transparent 60%),
-    radial-gradient(760px 420px at 90% 10%, rgba(14, 165, 164, 0.12), transparent 55%),
-    radial-gradient(880px 520px at 50% 95%, rgba(148, 163, 184, 0.28), transparent 65%);
+    radial-gradient(920px 520px at 10% 6%, rgba(61, 169, 252, 0.14), transparent 60%),
+    radial-gradient(760px 460px at 90% 12%, rgba(229, 68, 159, 0.12), transparent 55%),
+    radial-gradient(860px 520px at 48% 96%, rgba(82, 227, 184, 0.14), transparent 65%);
+  --color-neutral: 248, 247, 242;
+  --color-neutral-50: 255, 255, 255;
+  --color-neutral-100: 248, 247, 242;
+  --color-neutral-200: 236, 234, 228;
+  --color-neutral-300: 220, 217, 209;
+  --color-neutral-400: 194, 191, 183;
+  --color-neutral-500: 138, 135, 128;
+  --color-neutral-600: 98, 96, 91;
+  --color-neutral-700: 64, 63, 60;
+  --color-neutral-800: 34, 35, 39;
+  --color-neutral-900: 12, 14, 18;
+
+  --color-primary-50: 225, 244, 255;
+  --color-primary-100: 196, 231, 255;
+  --color-primary-200: 157, 214, 255;
+  --color-primary-300: 118, 197, 255;
+  --color-primary-400: 84, 183, 254;
+  --color-primary-500: 61, 169, 252;
+  --color-primary-600: 42, 150, 232;
+  --color-primary-700: 30, 124, 200;
+  --color-primary-800: 22, 99, 164;
+  --color-primary-900: 16, 74, 123;
+
+  --color-secondary-50: 255, 228, 240;
+  --color-secondary-100: 255, 198, 223;
+  --color-secondary-200: 250, 162, 205;
+  --color-secondary-300: 244, 122, 184;
+  --color-secondary-400: 236, 86, 165;
+  --color-secondary-500: 229, 68, 159;
+  --color-secondary-600: 204, 54, 140;
+  --color-secondary-700: 170, 43, 117;
+  --color-secondary-800: 136, 33, 93;
+  --color-secondary-900: 96, 23, 68;
 }
 
 html.dark {
-  --sondos-bg: #0b0f14;
-  --sondos-surface: #0f172a;
-  --sondos-border: #1f2937;
-  --sondos-accent: #60a5fa;
-  --sondos-accent-2: #34d399;
-  --sondos-quote-bg: rgba(15, 23, 42, 0.45);
-  --sondos-code-bg: rgba(15, 23, 42, 0.7);
-  --sondos-code-border: rgba(148, 163, 184, 0.25);
-  --sondos-hr-border: rgba(148, 163, 184, 0.2);
-  --sondos-img-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+  --sondos-bg: #0c0e12;
+  --sondos-surface: #1a1d23;
+  --sondos-border: #2a2d35;
+  --sondos-text: #f8f7f2;
+  --sondos-text-muted: rgba(248, 247, 242, 0.7);
+  --sondos-accent: #3da9fc;
+  --sondos-accent-2: #ffc738;
+  --sondos-quote-bg: rgba(61, 169, 252, 0.16);
+  --sondos-code-bg: rgba(26, 29, 35, 0.85);
+  --sondos-code-border: rgba(61, 169, 252, 0.3);
+  --sondos-hr-border: rgba(61, 169, 252, 0.22);
+  --sondos-img-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
   --sondos-bg-image:
-    radial-gradient(800px 420px at 10% 10%, rgba(96, 165, 250, 0.18), transparent 60%),
-    radial-gradient(700px 380px at 90% 20%, rgba(52, 211, 153, 0.16), transparent 55%),
-    radial-gradient(900px 520px at 50% 90%, rgba(15, 23, 42, 0.6), transparent 65%);
+    radial-gradient(840px 420px at 12% 14%, rgba(61, 169, 252, 0.18), transparent 60%),
+    radial-gradient(720px 380px at 88% 16%, rgba(229, 68, 159, 0.14), transparent 55%),
+    radial-gradient(860px 520px at 50% 92%, rgba(82, 227, 184, 0.12), transparent 65%);
+  --color-neutral: 12, 14, 18;
+  --color-neutral-50: 238, 239, 244;
+  --color-neutral-100: 220, 221, 230;
+  --color-neutral-200: 186, 189, 200;
+  --color-neutral-300: 150, 153, 165;
+  --color-neutral-400: 112, 115, 128;
+  --color-neutral-500: 74, 77, 88;
+  --color-neutral-600: 42, 45, 53;
+  --color-neutral-700: 26, 29, 35;
+  --color-neutral-800: 20, 22, 28;
+  --color-neutral-900: 12, 14, 18;
 }
 
 body {
-  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
-  letter-spacing: -0.01em;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  letter-spacing: -0.005em;
+  color: var(--sondos-text);
+  color: var(--sondos-text);
   background-color: var(--sondos-bg);
   background-image: var(--sondos-bg-image);
+  background-repeat: no-repeat;
+  background-size: 125% 125%;
+  background-attachment: fixed;
+  background-position: top center;
+  color: var(--sondos-text);
+  line-height: 1.65;
+}
+
+html.dark img[src*="sondos-logo-symbol"] {
+  filter: invert(1) brightness(1.15);
 }
 
 h1,
@@ -54,12 +114,32 @@ h4,
 h5,
 h6 {
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
+  color: var(--sondos-text);
+}
+
+a {
+  color: var(--sondos-accent);
 }
 
 a {
   text-decoration-thickness: 0.12em;
   text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--sondos-accent-2);
+}
+
+.prose {
+  color: var(--sondos-text);
+}
+
+html.dark .prose strong,
+html.dark .prose b {
+  color: var(--sondos-text);
+  font-weight: 700;
 }
 
 main img,
@@ -84,4 +164,227 @@ main img,
 
 .prose hr {
   border-color: var(--sondos-hr-border);
+}
+
+.sondos-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.sondos-hero {
+  background: var(--sondos-surface);
+  border: 1px solid var(--sondos-border);
+  border-radius: 28px;
+  padding: 2.5rem 2.75rem;
+  box-shadow: 0 18px 32px rgba(15, 48, 41, 0.08);
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.sondos-hero__eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sondos-text-muted);
+  color: var(--sondos-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.sondos-hero h1 {
+  font-size: clamp(1.6rem, 2.1vw, 2.25rem);
+  margin: 0 0 1rem;
+  line-height: 1.15;
+}
+
+.sondos-hero p {
+  font-size: 1.05rem;
+  color: var(--sondos-text-muted);
+  font-size: 1.05rem;
+  color: var(--sondos-text-muted);
+  margin: 0 0 1.5rem;
+  max-width: 52ch;
+}
+
+.sondos-hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.sondos-hero__cta--footer {
+  grid-column: 1 / -1;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.sondos-hero__media img {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  box-shadow: 0 16px 28px rgba(15, 48, 41, 0.12);
+}
+
+.sondos-home__main {
+  min-width: 0;
+}
+
+.sondos-recent > .relative.w-screen {
+  position: static !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-inline: 0 !important;
+  margin-inline: 0 !important;
+}
+
+.sondos-recent > .relative.w-screen .grid {
+  margin-inline: auto !important;
+  max-width: 100% !important;
+}
+
+.sondos-recent section.grid {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.sondos-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  background: var(--sondos-accent);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sondos-hero__btn--ghost {
+  background: transparent;
+  color: var(--sondos-accent);
+  border: 1px solid var(--sondos-accent);
+}
+
+.sondos-hero__btn:hover,
+.sondos-hero__btn:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(31, 122, 117, 0.2);
+}
+
+.sondos-hero__btn--ghost:hover,
+.sondos-hero__btn--ghost:focus-visible {
+  color: #ffffff;
+  background: var(--sondos-accent);
+}
+
+.sondos-home__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 2rem;
+}
+
+.sondos-home__sidebar {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+.sondos-sidebar {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.sondos-widget {
+  background: var(--sondos-surface);
+  border: 1px solid var(--sondos-border);
+  border-radius: 18px;
+  padding: 1rem 1.25rem 1.25rem;
+  box-shadow: 0 10px 20px rgba(15, 48, 41, 0.06);
+}
+
+.sondos-widget h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sondos-text-muted);
+}
+
+.sondos-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.sondos-widget a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sondos-search,
+.sondos-subscribe {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.sondos-search input,
+.sondos-subscribe input {
+  border-radius: 999px;
+  border: 1px solid var(--sondos-border);
+  padding: 0.5rem 0.9rem;
+  font-size: 0.95rem;
+  background: var(--sondos-bg);
+  color: var(--sondos-text);
+  color: var(--sondos-text);
+}
+
+.sondos-search button,
+.sondos-subscribe button {
+  border-radius: 999px;
+  border: none;
+  padding: 0.55rem 0.9rem;
+  background: var(--sondos-accent);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sondos-search input:focus-visible,
+.sondos-subscribe input:focus-visible,
+.sondos-search button:focus-visible,
+.sondos-subscribe button:focus-visible,
+.sondos-hero__btn:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--sondos-accent) 70%, #ffffff);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1100px) {
+  .sondos-home__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sondos-home__sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 900px) {
+  .sondos-home {
+    padding: 2.5rem 1.25rem 3.5rem;
+  }
+
+  .sondos-hero {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    background-attachment: scroll;
+    background-size: 160% 160%;
+  }
 }
