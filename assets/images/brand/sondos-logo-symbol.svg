@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Botijo geométrico híbrido — símbolo sondos.click -->
+  <g stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- cuerpo -->
+    <circle cx="472" cy="552" r="180"/>
+    <!-- asa (arco 210°→330°) -->
+    <path d="M 372.39 455.00 A 115 115 0 0 1 571.61 455.00"/>
+    <!-- pitorro (triángulo + punta redondeada) -->
+    <polygon points="612,484 762,467 762,501"/>
+    <circle cx="762" cy="484" r="14"/>
+    <!-- cuello -->
+    <rect x="437" y="252" width="70" height="120" rx="18"/>
+    <!-- círculo interior (complejidad dentro) -->
+    <circle cx="472" cy="552" r="82"/>
+    <!-- punto idea (simplificación) -->
+    <circle cx="513" cy="552" r="10" fill="currentColor" stroke="none"/>
+  </g>
+</svg>

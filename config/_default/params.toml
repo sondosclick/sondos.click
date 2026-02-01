@@ -1,13 +1,16 @@
 colorScheme = "github"
-defaultAppearance = "dark"
-autoSwitchAppearance = true
+defaultAppearance = "light"
+autoSwitchAppearance = false
 enableSearch = true
 mainSections = ["posts"]
+logo = "images/brand/sondos-logo-symbol.svg"
 
 [homepage]
-  layout = "profile"
+  layout = "custom"
   showRecent = true
-  recentLimit = 5
+  showRecentItems = 5
+  cardView = true
+  cardViewScreenWidth = true
 
 [article]
   showDate = true

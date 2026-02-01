@@ -1,280 +1,444 @@
 ---
 layout: post
-title: "AWS CLI Context Toolkit (SSO + SSM)"
+title: "aws-bash-toolbox (AWS CLI + SSO + SSM)"
 date: 2026-01-30
 categories: [DevOps, AWS, CLI]
 tags: [AWS, AWS CLI, SSO, SSM, IAM Identity Center, Bash, fzf]
-description: "Toolkit to manage context (profile + region) and connect via SSM without the web console."
+description: "Bash toolkit for AWS context switching, SSM sessions, and port-forwarding without the console."
 ---
 
-# AWS CLI Context Toolkit (SSO + SSM)
+# aws-bash-toolbox (AWS CLI + SSO + SSM) 🧰
 
-> A **convenient, fast, and web‑console‑free** way to work with multiple AWS accounts and regions, inspired by `kubectx` / `kubens`.
+Status: **alpha** (breaking changes are allowed).
 
-This document explains **what problem it solves**, **how to set it up**, and **how to use it day to day**.
+A **Bash** toolkit that gives you a `kubectx/kubens`-style workflow for AWS:
+
+- Active context: persistent `AWS_PROFILE` + `AWS_REGION`
+- Fast switching: `abt change ...` / `abt select context` (with `fzf`)
+- EC2 listing without the console: `abt list ec2`
+- SSM Session Manager connect: `abt connect ssm` / `abt select ssm`
+- SSM port forwarding to private services: `abt connect forward` / `abt select forward`
+- Corporate VPN/proxy workaround: SSM ignores proxy only during sessions
+- Utilities: `abt list profiles/regions`, `abt show identity`, `abt test doctor`, `abt sso login`
 
 Repository: `https://github.com/sondosclick/aws-bash-toolbox.git`
 
 ---
 
-## 🎯 Goal
+## Requirements
 
-When we work with AWS daily we usually have:
-
-- many **accounts**
-- several **permission sets / roles**
-- multiple **regions**
-- access via **IAM Identity Center (SSO)**
-- instance access via **SSM Session Manager**
-
-The typical outcome is:
-
-- long commands with `--profile` and `--region`
-- jumping into the **AWS Console** just to copy an `instance-id`
-- mistakes because we’re in the **wrong account or region**
-
-This toolkit tries to solve that with:
-
-- an **active context** (profile + region)
-- short, consistent commands
-- interactive selectors with `fzf`
-- SSM access **without SSH, without bastions, and without the web console**
-
----
-
-## 🧩 What’s included
-
-### Context management (kubectx‑style)
-
-- `awsctx` → shows the current context
-- `awsp <profile>` → switches profile
-- `awsr <region>` → switches region
-- `awsctxf` → interactive profile@region selector
-
-The context is **persisted** across terminals.
-
----
-
-### EC2 / SSM utilities
-
-- `ec2ls` → lists instances (Name, ID, IP, state)
-- `ssm <instance-id>` → connects via SSM
-- `ssm -n <NameTag>` → connects via SSM using the Name tag
-- `ssmfzf` → interactive instance selector + SSM
-
-Everything automatically uses the **current context**.
-
----
-
-### Extras
-
-- automatic **proxy/VPN bypass for SSM only**
-- TAB autocompletion for profiles and regions
-- optional prompt with `[aws:profile@region]`
-
----
-
-## 📦 Requirements
-
-- Ubuntu 24.04
+- Linux (tested on Ubuntu 24.04)
 - Bash
 - AWS CLI v2
-- AWS access via **IAM Identity Center (SSO)**
+- IAM Identity Center (SSO) access
 
-Required packages:
+Install dependencies:
 
 ```bash
 sudo apt update
 sudo apt install -y fzf session-manager-plugin
 ```
 
----
-
-## 🔧 Setup
-
-### 1️⃣ AWS CLI + SSO
-
-You need at least:
-
-- one SSO session (`[sso-session ...]`)
-- one or more SSO profiles (`[profile ...]`)
-
-Minimal example:
-
-```ini
-[sso-session corporation-sso]
-sso_start_url = https://xxxx.awsapps.com/start
-sso_region = eu-central-1
-sso_registration_scopes = sso:account:access
-
-[profile corporation-base]
-sso_session = corporation-sso
-sso_account_id = 123456789012
-sso_role_name = admin
-region = eu-central-1
-```
-
-Initial login:
+Verify:
 
 ```bash
-aws sso login --sso-session corporation-sso
+aws --version         # should be aws-cli/2.x
+session-manager-plugin
 ```
 
 ---
 
-### 2️⃣ Context toolkit
+## Profile naming convention (recommended)
 
-Copy the **entire toolkit block** into `~/.bashrc` and reload:
+We use:
+
+**`corp-<env>-<role>`**
+
+Examples:
+
+- `corp-dev-readonly`
+- `corp-uat-admin`
+- `corp-pro-support`
+
+Where:
+
+- `<env>`: target environment (e.g., `dev`, `uat`, `pro`)
+- `<role>`: permission set / role in IAM Identity Center (e.g., `admin`, `readonly`, `support`)
+
+> If your team uses other names (`sandbox`, `np`, `prod`, etc.), adjust as needed.
+> The important part is consistency.
+
+---
+
+## 1) Configure AWS SSO (profiles)
+
+This toolbox assumes AWS SSO profiles in `~/.aws/config`.
+
+### 1.1 Create/validate the SSO session
+
+In `~/.aws/config`:
+
+```ini
+[sso-session corp-sso]
+sso_start_url = https://<YOUR_START_URL>/start
+sso_region = eu-central-1
+sso_registration_scopes = sso:account:access
+```
+
+Important: use the Start URL **without** `/#/` to avoid token/cache issues.
+
+### 1.2 Create profiles per account and role (permission set)
+
+Full examples:
+
+```ini
+[profile corp-dev-admin]
+sso_session = corp-sso
+sso_account_id = 111111111111
+sso_role_name = admin
+region = eu-west-3
+output = json
+
+[profile corp-uat-readonly]
+sso_session = corp-sso
+sso_account_id = 222222222222
+sso_role_name = readonly
+region = eu-west-3
+output = json
+
+[profile corp-pro-support]
+sso_session = corp-sso
+sso_account_id = 333333333333
+sso_role_name = support
+region = eu-west-3
+output = json
+```
+
+Note: for SSO the correct pattern is `sso_session + sso_account_id + sso_role_name`.
+Avoid `source_profile + role_arn` unless your org explicitly requires classic AssumeRole.
+
+### 1.3 Optional: assume an extra role after SSO login (SSM full access)
+
+If your org requires a **second role** after SSO (common for elevated access),
+create a **chained profile** that uses `source_profile` and `role_arn`.
+
+Example: assume a custom SSM full-access role **after** logging in with an
+existing SSO profile that ends in `assumerole`:
+
+```ini
+[profile corp-br-np-assumerole]
+sso_session = corp-sso
+sso_account_id = 418272778142
+sso_role_name = AssumeRole
+region = eu-west-3
+output = json
+
+[profile corp-br-np-ssmfullaccess]
+role_arn = arn:aws:iam::418272778142:role/ssmfullcaccess
+source_profile = corp-br-np-assumerole
+role_session_name = your-user
+region = eu-west-3
+```
+
+ASCII flow:
+
+```
+You
+  │
+  ├─(SSO login)─> corp-br-np-assumerole
+  │                (Identity Center permission set)
+  │
+  └─(AssumeRole)→ corp-br-np-ssmfullaccess
+                   (ssmfullcaccess)
+```
+
+When to use which:
+
+- Use the `assumerole` profile **only to log in** to SSO.
+- Use the `ssmfullaccess` profile **for commands that need the extra role**.
+
+Simple use:
+
+```bash
+# 1) Log in with the SSO session
+abt sso login corp-sso
+
+# 2) Switch to the derived role profile
+abt change profile corp-br-np-ssmfullaccess
+aws sts get-caller-identity
+```
+
+If you have many `*-assumerole` profiles, repeat the second block for each one,
+keeping `source_profile` pointed to its matching base profile and the same
+`role_arn` pattern (`ssmfullcaccess`).
+
+---
+
+## 2) SSO login
+
+If you changed profiles or saw errors:
+
+```bash
+rm -rf ~/.aws/sso/cache/*
+```
+
+Login:
+
+```bash
+aws sso login --sso-session corp-sso
+```
+
+Verify:
+
+```bash
+aws sts get-caller-identity --profile corp-dev-admin --region eu-west-3
+```
+
+---
+
+## 3) Install the toolbox
+
+### Method A) Automated install (recommended)
+
+```bash
+git clone https://github.com/sondosclick/aws-bash-toolbox
+cd aws-bash-toolbox
+./install.sh
+source ~/.bashrc
+```
+
+What `install.sh` does:
+
+- copies `abt.sh` to `~/.abt/abt.sh`
+- adds a line to `~/.bashrc`:
+
+```bash
+source "$HOME/.abt/abt.sh"
+```
+
+It does not overwrite your bashrc and is safe to run multiple times.
+
+### Method B) Manual (copy/paste)
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/sondosclick/aws-bash-toolbox
+```
+
+2. Copy `abt.sh` to `~/.abt`:
+
+```bash
+mkdir -p "$HOME/.abt"
+cp abt.sh "$HOME/.abt/abt.sh"
+```
+
+3. Edit your `~/.bashrc` and add at the end:
+
+```bash
+source "$HOME/.abt/abt.sh"
+```
+
+4. Reload:
 
 ```bash
 source ~/.bashrc
 ```
 
-(The block is designed to be self‑contained and not break anything existing.)
-
 ---
 
-## 🚀 Daily use
+## 4) Optional configuration (abt)
 
-### Show current context
+The toolbox can read an optional file: `~/.abt/abt.env` (shell format).
+
+Create a template:
 
 ```bash
-awsctx
+abt config init
 ```
 
-Typical output:
-
-```
-AWS_PROFILE=corporation-env-admin  AWS_REGION=eu-west-3
-```
-
----
-
-### Switch profile
+Force overwrite:
 
 ```bash
-awsp corporation-env-admin
+abt config init --force
 ```
 
-With TAB for autocompletion.
-
----
-
-### Switch region
+Available variables (example):
 
 ```bash
-awsr eu-west-3
+ABT_DEFAULT_PROFILE="corp-base"
+ABT_DEFAULT_REGION="eu-central-1"
+ABT_REGIONS="eu-central-1 eu-west-1 eu-west-3 us-east-1 us-west-2"
+ABT_COLOR=1
 ```
 
----
+- `ABT_DEFAULT_*`: used when no persisted context exists.
+- `ABT_REGIONS`: space-separated list used by selectors.
+- `ABT_COLOR=0`: disables colored output.
 
-### Switch profile + region at once (pro mode)
+Show current config:
 
 ```bash
-awsctxf
+abt show config
 ```
-
-- interactive selector
-- shows `profile@region` combos
-- remembers the last context
-
-Very similar to `kubectx`.
 
 ---
 
-## 🖥️ Working with EC2
+## 5) Quick usage
 
-### List instances
+Format: `abt <verb> <object>`
 
 ```bash
-ec2ls
+abt show context
+abt show profile
+abt show region
+abt show identity
+abt show version
+abt export context
+abt list profiles
+abt list regions
+abt change profile corp-uat-readonly
+abt change region eu-west-3
+abt change context corp-uat-readonly eu-west-3
+abt select context
+abt select profile
+abt select region
+abt list ec2
+abt connect ssm i-0123456789abcdef0
+abt connect ssm -n api-01
+abt connect forward i-0123456789abcdef0 db.internal 5432
+abt connect forward -n bastion-01 db.internal 5432 15432
+abt select ssm
+abt select forward
+abt sso login
+abt test sts
+abt test sts eu-west-3 eu-central-1
+abt test doctor
+abt config init
+abt show config
 ```
 
-Shows:
-
-- Name (tag)
-- InstanceId
-- Private IP
-- State
-
-No web console required.
-
----
-
-### Connect via SSM (direct)
+Tip: `abt export context` is handy for scripts:
 
 ```bash
-ssm i-0123456789abcdef0
+source <(abt export context)
 ```
 
 ---
 
-### Connect via SSM using the Name tag
+## 6) Port forward to private services (SSM)
+
+Use an SSM-managed instance (bastion) as a tunnel from your laptop to a private
+service (RDS, Redis, internal API, etc.). This avoids SSH and works with IAM
+Identity Center.
+
+Start a port-forward session:
 
 ```bash
-ssm -n api-01
+# Forward local 15432 -> db.internal:5432 through a bastion
+abt connect forward -n bastion-01 db.internal 5432 15432
+
+# If local port is omitted, it defaults to the remote port
+abt connect forward i-0123456789abcdef0 db.internal 5432
 ```
 
----
-
-### Interactive instance selector (recommended)
+Interactive (fzf) flow with a common DB port picker:
 
 ```bash
-ssmfzf
+abt select forward
 ```
 
-- lists only `running` instances
-- arrows / search
-- Enter → SSM session opened
+Tip: add a tag on the bastion to prefill the remote host:
 
-This is usually the most comfortable flow.
+- `ForwardHost` (preferred)
+- `DBHost`, `DbHost`, `DBEndpoint`, `RDSEndpoint`, `RDSHost`, `db_host`
 
----
+Then connect your client (e.g., DBeaver) to:
 
-## 🌐 Note about proxy / VPN
+```
+Host: 127.0.0.1
+Port: 15432   # or 5432 if you didn't override local port
+```
 
-In corporate environments it’s common that:
+Example: RDS (PostgreSQL)
 
-- AWS CLI works
-- SSM fails with errors like `EOF`
+```bash
+abt connect forward -n bastion-01 mydb.abc123.eu-west-3.rds.amazonaws.com 5432 15432
+```
 
-So:
+Security group rules to make this work:
 
-- **only SSM commands** ignore proxy variables
-- the rest of AWS CLI still uses proxy if needed
+- RDS SG inbound: allow 5432 from the bastion instance SG.
+- Bastion SG outbound: allow 5432 to the RDS SG (if egress is restricted).
+- SSM requirements: instance has SSM agent + IAM role with `AmazonSSMManagedInstanceCore`.
 
-This avoids breaking other corporate workflows.
+Notes:
 
----
-
-## 🧠 Toolkit philosophy
-
-- Less mental context switching (you always know where you are)
-- Less web console usage
-- Less copy/pasting IDs
-- Repeatable, fast workflows
-
-It doesn’t try to replace Terraform, CDK, or the console.
-It’s an **ergonomics layer for day‑to‑day work**.
+- Keep the terminal open while the session is active (Ctrl+C to stop).
+- The instance must be SSM-managed and able to reach the remote host/port.
 
 ---
 
-## 🧪 Next ideas (if the team adopts it)
+## FAQ
 
-- auto `aws sso login` on profile switch
-- favorite contexts (shortcuts)
-- tmux integration
-- zsh support
-- wrapper for port‑forwarding (DBs, internal apps)
+### "Error loading SSO Token: Token for <start_url> does not exist"
+
+Fix:
+
+```bash
+rm -rf ~/.aws/sso/cache/*
+aws sso login --sso-session corp-sso
+```
+
+Verify your profiles use `sso_session = corp-sso`.
 
 ---
 
-## 🙌 Feedback
+### `Cannot perform start session: EOF`
 
-If this saves you time:
+Likely corporate proxy/VPN. This toolbox ignores proxy only for SSM, but if it still fails:
 
-- try it for a week
-- break things
-- propose improvements
+- try without VPN / another network (if possible)
+- inspect proxy env:
 
-The idea is to evolve it **from real team usage**, not as something rigid.
+```bash
+env | grep -i proxy
+```
+
+---
+
+### `session-manager-plugin: command not found`
+
+Install:
+
+```bash
+sudo apt update
+sudo apt install -y session-manager-plugin
+```
+
+---
+
+### No instances show up in `abt select ssm`
+
+Check SSM Agent / permissions / connectivity:
+
+```bash
+aws ssm describe-instance-information \
+  --profile <profile> --region <region> \
+  --query 'InstanceInformationList[].{Id:InstanceId,Status:PingStatus,Agent:AgentVersion}' \
+  --output table
+```
+
+---
+
+## Repo files
+
+- `abt.sh` -> Bash functions (toolbox)
+- `install.sh` -> installer (adds `source ...` to `~/.bashrc`)
+- `README.md` -> documentation
+
+---
+
+## License
+
+GPL-3.0-only. See `LICENSE`.

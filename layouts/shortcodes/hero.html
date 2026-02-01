@@ -1,0 +1,38 @@
+{{- $eyebrow := .Get "eyebrow" | default "" -}}
+{{- $title := .Get "title" | default "" -}}
+{{- $subtitle := .Get "subtitle" | default "" -}}
+{{- $image := .Get "image" | default "" -}}
+{{- $imageAlt := .Get "imageAlt" | default "" -}}
+{{- $cta1 := .Get "cta1" | default "" -}}
+{{- $cta1Link := .Get "cta1Link" | default "" -}}
+{{- $cta2 := .Get "cta2" | default "" -}}
+{{- $cta2Link := .Get "cta2Link" | default "" -}}
+
+<section class="sondos-hero">
+  <div class="sondos-hero__text">
+    {{- if $eyebrow }}
+    <div class="sondos-hero__eyebrow">{{ $eyebrow }}</div>
+    {{- end }}
+    {{- if $title }}
+    <h1>{{ $title }}</h1>
+    {{- end }}
+    {{- if $subtitle }}
+    <p>{{ $subtitle }}</p>
+    {{- end }}
+  </div>
+  {{- if $image }}
+  <div class="sondos-hero__media">
+    <img src="{{ $image | relURL }}" alt="{{ $imageAlt }}" loading="lazy" />
+  </div>
+  {{- end }}
+  {{- if or $cta1 $cta2 }}
+  <div class="sondos-hero__cta sondos-hero__cta--footer">
+    {{- if and $cta1 $cta1Link }}
+    <a class="sondos-hero__btn" href="{{ $cta1Link | relLangURL }}">{{ $cta1 }}</a>
+    {{- end }}
+    {{- if and $cta2 $cta2Link }}
+    <a class="sondos-hero__btn sondos-hero__btn--ghost" href="{{ $cta2Link | relLangURL }}">{{ $cta2 }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+</section>

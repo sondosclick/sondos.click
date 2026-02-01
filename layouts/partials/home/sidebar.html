@@ -1,0 +1,45 @@
+{{ $all := sort (where .Site.RegularPages "Section" "posts") "Date" "desc" }}
+<div class="sondos-sidebar">
+  <div class="sondos-widget">
+    <h3>{{ if eq .Site.Language.Lang "en" }}Search{{ else }}Buscar{{ end }}</h3>
+    <form class="sondos-search" action="{{ "search" | relLangURL }}" method="get">
+      <input type="text" name="q" placeholder="{{ if eq .Site.Language.Lang "en" }}Search...{{ else }}Buscar...{{ end }}" />
+      <button type="submit">{{ if eq .Site.Language.Lang "en" }}Search{{ else }}Buscar{{ end }}</button>
+    </form>
+  </div>
+
+  <div class="sondos-widget">
+    <h3>{{ if eq .Site.Language.Lang "en" }}Subscribe{{ else }}Suscribirse{{ end }}</h3>
+    <form class="sondos-subscribe">
+      <input type="email" placeholder="{{ if eq .Site.Language.Lang "en" }}Email address{{ else }}Correo electrónico{{ end }}" />
+      <button type="submit">{{ if eq .Site.Language.Lang "en" }}Subscribe{{ else }}Suscribirme{{ end }}</button>
+    </form>
+  </div>
+
+  <div class="sondos-widget">
+    <h3>{{ if eq .Site.Language.Lang "en" }}Recent posts{{ else }}Posts recientes{{ end }}</h3>
+    <ul>
+      {{ range first 6 $all }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="sondos-widget">
+    <h3>{{ if eq .Site.Language.Lang "en" }}Archives{{ else }}Archivos{{ end }}</h3>
+    <ul>
+      {{ range first 6 (.Site.RegularPages.GroupByDate "January 2006") }}
+        <li>{{ .Key }}</li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="sondos-widget">
+    <h3>{{ if eq .Site.Language.Lang "en" }}Categories{{ else }}Categorías{{ end }}</h3>
+    <ul>
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <li><a href="{{ (printf "categories/%s" ($name | urlize)) | relLangURL }}">{{ $name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
