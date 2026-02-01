@@ -1,10 +1,15 @@
 ---
-title: "Sondos Clicks"
-description: "Two clicks away from PRO"
+title: "Home"
 ---
 
-![Abstract blog cover](/images/home/hero.svg)
-
-AWS, cloud, and AI: everything’s perfect, nothing ever breaks, and I’m not laughing (much).
-
-In this blog you’ll find notes about automation, complexity, product culture, and the decisions we tend to delegate without realizing it.
+{{< hero
+  eyebrow="Sondos Clicks"
+  title="Two clicks away from PROD"
+  subtitle="A notebook of ideas, experiments, and practical guides for teams that want to understand the “why” before the “how.”"
+  image="/images/brand/sondos-hero-botijero.png"
+  imageAlt="Botijo illustration"
+  cta1="Explore posts"
+  cta1Link="posts"
+  cta2="About"
+  cta2Link="about"
+>}}

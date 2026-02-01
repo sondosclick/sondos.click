@@ -5,16 +5,16 @@ date: 2026-02-01
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Productividad, Complejidad, Pensamiento Crítico, Automatización]
 description: "Por qué “pídeselo a la IA” es el nuevo “son dos clics” y cómo la complejidad no desaparece, solo cambia de lugar."
-featureimage: "/images/posts/2026-01-22-pidelo-a-la-ia-el-nuevo-sondos-clicks/feature.svg"
+featureimage: "/images/posts/2026-02-01-pidelo-a-la-ia-el-nuevo-sondos-clicks/feature.png"
 ---
 # Pídeselo a la IA. El nuevo *sondosclicks*
 
-![Ilustración sobre pedirle todo a la IA](/images/posts/2026-01-22-pidelo-a-la-ia-el-nuevo-sondos-clicks/feature.svg)
+![Ilustración sobre pedirle todo a la IA](/images/posts/2026-02-01-pidelo-a-la-ia-el-nuevo-sondos-clicks/feature.png)
 
 Durante años, en tecnología, sobrevivimos gracias a una frase tranquilizadora.  
 Una de esas frases que convierten semanas de trabajo, decisiones incómodas y riesgos reales en algo casi doméstico.
 
-> *“Eso son dos clics.”*
+> **“Eso son dos clics.”**
 
 Daba igual si hablábamos de cloud, automatización o arquitectura.  
 Siempre había alguien dispuesto a reducir el problema a una combinación mágica de simplicidad y optimismo.
@@ -30,14 +30,18 @@ Y lo inquietante es que produce exactamente el mismo efecto.
 La frase funciona porque la IA impresiona. Mucho.  
 Responde rápido, escribe bien y casi siempre devuelve algo que *parece* razonable. Le pides algo y responde. Le pides más y mejora. Le corriges y se adapta. Es como una **caja negra con sonrisa**: no sabes muy bien qué hay dentro, pero te habla con tanta seguridad que acabas confiando.
 
+![Ilustración sobre la promesa de la IA como atajo](/images/posts/2026-02-01-pidelo-a-la-ia-el-nuevo-sondos-clicks/scene-1.png)
+
 Desde fuera, la conclusión parece obvia:  
 si la caja responde en segundos, quizá el problema nunca fue tan complejo.
 
-Spoiler: sí lo era.
+> **"Spoiler: sí lo era."**
 
 Con el cloud aprendimos esta lección tarde. Provisionar infraestructura resultó ser trivial. Operarla bien, gobernarla y mantenerla en el tiempo… no tanto. Los famosos “dos clics” no eliminaron la complejidad; simplemente la escondieron detrás de una interfaz amable. La dificultad seguía ahí, esperando a que alguien la ignorase lo suficiente.
 
 Con la IA estamos repitiendo el patrón, solo que ahora la interfaz es lenguaje natural y la caja responde con más confianza que nunca. Antes el mensaje era “no te preocupes, son dos clics”. Ahora es “no te preocupes, pídeselo a la IA”. La tranquilidad es la misma. El riesgo también.
+
+![Ilustración sobre complejidad escondida tras interfaces cómodas](/images/posts/2026-02-01-pidelo-a-la-ia-el-nuevo-sondos-clicks/scene-2.png)
 
 Imaginemos —en un ejercicio puramente ficticio— una situación que *nunca* ocurre en empresas reales.  
 Un directivo dice algo como:
@@ -58,6 +62,8 @@ Hasta que alguien hace preguntas incómodas.
 La caja ha generado una respuesta.  
 El sistema, en realidad, nunca fue diseñado.
 
+![Ilustración sobre pedirle a la IA un sistema completo](/images/posts/2026-02-01-pidelo-a-la-ia-el-nuevo-sondos-clicks/scene-3.png)
+
 Aquí está el núcleo del problema. Confundimos generación con resolución. La caja produce *outputs* con una facilidad asombrosa, y eso nos engaña. Porque los sistemas reales no fallan por falta de texto, código o ideas. Fallan por malas decisiones, supuestos no explicitados, contextos ignorados y responsabilidades difusas.
 
 Nada de eso desaparece porque alguien lo haya escrito rápido… ni porque lo haya escrito una caja.
@@ -68,6 +74,8 @@ La complejidad no ha desaparecido. Solo ha cambiado de sitio. Antes estaba en el
 
 Y cuando falla, falla con una particularidad inquietante:  
 nadie siente que haya tomado realmente la decisión.
+
+![Ilustración sobre la diferencia entre generar y resolver](/images/posts/2026-02-01-pidelo-a-la-ia-el-nuevo-sondos-clicks/scene-4.png)
 
 La próxima vez que alguien diga:
 
@@ -83,8 +91,7 @@ Quizá merezca una respuesta menos amable:
 Porque no, no es el nuevo *sondosclicks*.  
 Es algo peor.
 
-Es delegar criterio en una caja negra…  
-y sentir alivio por haberlo hecho.
+Es delegar criterio en una caja negra… **y sentir alivio por haberlo hecho.**
 
 ---
 

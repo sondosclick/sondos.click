@@ -1,0 +1,13 @@
+<section class="sondos-home">
+  <div class="sondos-home__grid">
+    <div class="sondos-home__main">
+      {{ .Content }}
+      <div class="sondos-recent">
+        {{ partial "recent-articles/main.html" . }}
+      </div>
+    </div>
+    <aside class="sondos-home__sidebar">
+      {{ partial "home/sidebar.html" . }}
+    </aside>
+  </div>
+</section>
