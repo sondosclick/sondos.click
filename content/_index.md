@@ -1,10 +1,15 @@
 ---
-title: "Sondos Clicks"
-description: "A dos clicks de PRO"
+title: "Inicio"
 ---
 
-![Portada abstracta del blog](/images/home/hero.svg)
-
-AWS, cloud e IA: todo perfecto, nada falla, y yo tampoco me río (mucho).
-
-En este blog encontrarás notas sobre automatización, complejidad, cultura de producto y las decisiones que solemos delegar sin darnos cuenta.
+{{< hero
+  eyebrow="Sondos Clicks"
+  title="A dos clicks de PRO"
+  subtitle="Un cuaderno de ideas, experimentos y guías prácticas para equipos que quieren entender el “por qué” antes del “cómo”."
+  image="/images/brand/sondos-hero-botijero.png"
+  imageAlt="Ilustración de un botijo"
+  cta1="Explorar posts"
+  cta1Link="posts"
+  cta2="Sobre mí"
+  cta2Link="about"
+>}}
