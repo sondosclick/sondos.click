@@ -9,14 +9,6 @@
   </div>
 
   <div class="sondos-widget">
-    <h3>{{ if eq .Site.Language.Lang "en" }}Subscribe{{ else }}Suscribirse{{ end }}</h3>
-    <form class="sondos-subscribe">
-      <input type="email" placeholder="{{ if eq .Site.Language.Lang "en" }}Email address{{ else }}Correo electrónico{{ end }}" />
-      <button type="submit">{{ if eq .Site.Language.Lang "en" }}Subscribe{{ else }}Suscribirme{{ end }}</button>
-    </form>
-  </div>
-
-  <div class="sondos-widget">
     <h3>{{ if eq .Site.Language.Lang "en" }}Recent posts{{ else }}Posts recientes{{ end }}</h3>
     <ul>
       {{ range first 6 $all }}
