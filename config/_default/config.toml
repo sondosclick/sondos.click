@@ -9,10 +9,14 @@ defaultContentLanguageInSubdir = false
     languageCode = "es"
     languageName = "ES"
     weight = 1
+    [languages.es.params]
+      displayName = "ES"
   [languages.en]
     languageCode = "en"
     languageName = "EN"
     weight = 2
+    [languages.en.params]
+      displayName = "EN"
 
 [module]
   [[module.imports]]
