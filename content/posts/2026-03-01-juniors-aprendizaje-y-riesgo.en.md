@@ -5,12 +5,12 @@ date: 2026-03-01
 categories: [AI, Technology, Culture]
 tags: [AI, Learning, Talent, Complexity]
 description: "The risk of a generation learning to execute without understanding in the AI era."
-featureimage: "/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.svg"
+featureimage: "/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.png"
 ---
 
 # Juniors, learning, and the risk of a generation that doesn’t understand what works
 
-![Illustration about layered learning](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.svg)
+![Illustration about layered learning](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.png)
 
 Every generation learns with the tools at hand.  
 We learned with search engines, forums, incomplete docs, and answers that started with “this isn’t best practice, but…”.
@@ -28,6 +28,8 @@ They don’t test hypotheses. They wait for answers.
 The black box with a smile is always available, never tired, never judgmental, and answers with enviable confidence. You ask it something and it gives you code, explanations, and even nicely written comments. Sometimes it even adds emojis, in case you doubted its good intentions.
 
 And, to the discomfort of many seniors, **a lot of the time it works**.
+
+![Illustration about answers that seem to work](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/scene-1.png)
 
 It’s worth clarifying something from the start to avoid misunderstandings:  
 juniors **are not innocent victims** of this situation.
@@ -47,6 +49,8 @@ It makes it more comfortable.
 Now the code doesn’t come from a chaotic Stack Overflow thread, but from an elegant, structured, apparently reasoned answer. No more cryptic variable names or comments in Russian. Everything looks clean. Professional. Trustworthy.
 
 And that’s precisely what’s dangerous.
+
+![Illustration about polished answers hiding risk](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/scene-2.png)
 
 The junior runs the code, passes the basic tests, and sees everything work. They smile. The box smiles too. The commit happens. Progress.
 
@@ -72,6 +76,8 @@ It’s built by:
 - investigating causes,
 - comparing alternatives,
 - and owning the consequences of decisions.
+
+![Illustration about judgment built through experience](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/scene-3.png)
 
 When that process is replaced by constant interaction with the box, the junior learns to *operate the tool*, but not necessarily to *think the system*.
 
@@ -119,6 +125,8 @@ but hesitate when something goes off-script.
 
 A generation that knows how to talk to the box,  
 but not how to challenge it.
+
+![Illustration about dependence on the box](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/scene-4.png)
 
 And when, in a few years, we need seniors with judgment,  
 with a memory of past mistakes  

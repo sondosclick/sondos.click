@@ -5,12 +5,12 @@ date: 2026-02-15
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Sesgos, Escala, Riesgo]
 description: "Qué pasa cuando la IA se equivoca a escala y sus sesgos se convierten en norma."
-featureimage: "/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.svg"
+featureimage: "/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.png"
 ---
 
 # Cuando la caja se equivoca: sesgos, escala y normalización
 
-![Ilustracion sobre errores amplificados](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.svg)
+![Ilustracion sobre errores amplificados](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.png)
 
 Hasta ahora hemos hablado de simplificación y de autoridad.  
 Del “pídeselo a la IA” y de por qué obedecemos a algo que no entiende.  
@@ -32,6 +32,8 @@ No es puntual.
 No es visible.
 
 Es **reproducible**, **escalable** y, lo más inquietante, **normalizable**.
+
+![Ilustracion sobre errores que escalan](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-1.png)
 
 ---
 
@@ -69,6 +71,8 @@ Y no se corrige porque nadie siente que lo haya decidido.
 La caja no solo hereda sesgos.  
 Los **industrializa**.
 
+![Ilustracion sobre el sesgo convertido en regla](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-2.png)
+
 ---
 
 Hay algo especialmente perverso en cómo funcionan estos errores.
@@ -83,6 +87,8 @@ No levanta la voz.
 No parece injusta.
 
 Y precisamente por eso, sus decisiones se aceptan con una docilidad inquietante.
+
+![Ilustracion sobre la aceptacion sin friccion](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-3.png)
 
 ---
 
@@ -146,6 +152,8 @@ Porque hemos perdido la costumbre de cuestionar sus respuestas, de pedir explica
 La caja negra con sonrisa no es malvada.  
 Pero tampoco es neutral.  
 Y desde luego, no es inocente.
+
+![Ilustracion sobre errores normalizados](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-4.png)
 
 Cada vez que aceptamos sus errores como “cosas que pasan”, estamos entrenando algo más profundo que un modelo:  
 estamos entrenando una cultura donde **la comodidad pesa más que el criterio**.

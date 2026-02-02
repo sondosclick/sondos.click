@@ -28,3 +28,7 @@ logo = "images/brand/sondos-logo-symbol.svg"
 
 [[author.links]]
   linkedin = "https://www.linkedin.com/"
+
+[plausible]
+  enable = true
+  domain = "sondos.click"

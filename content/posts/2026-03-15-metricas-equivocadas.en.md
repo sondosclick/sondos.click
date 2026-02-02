@@ -5,12 +5,12 @@ date: 2026-03-15
 categories: [AI, Technology, Culture]
 tags: [AI, Metrics, Productivity, Complexity]
 description: "Why measuring speed with AI pulls us away from value and increases complexity."
-featureimage: "/images/posts/2026-03-15-metricas-equivocadas/feature.svg"
+featureimage: "/images/posts/2026-03-15-metricas-equivocadas/feature.png"
 ---
 
 # Wrong metrics: why measuring speed is taking us to the wrong place
 
-![Illustration of conflicting charts](/images/posts/2026-03-15-metricas-equivocadas/feature.svg)
+![Illustration of conflicting charts](/images/posts/2026-03-15-metricas-equivocadas/feature.png)
 
 If there’s anything we like in tech almost as much as a new tool, it’s measuring it.  
 And if there’s anything more calming than measuring, it’s seeing a chart go up and to the right.
@@ -33,6 +33,8 @@ The black box with a smile does too.
 And someone says the magic phrase:  
 > “See? It works.”
 
+![Illustration about the illusion of rising charts](/images/posts/2026-03-15-metricas-equivocadas/scene-1.png)
+
 The problem is we’re measuring what’s easy, not what’s important.
 
 We measure speed because it’s visible.  
@@ -50,6 +52,8 @@ That doesn’t fit neatly in a KPI.
 
 This mistake isn’t new.  
 We’ve been making it for decades—we’re just automating it now.
+
+![Illustration about measuring the easy, not the important](/images/posts/2026-03-15-metricas-equivocadas/scene-2.png)
 
 For years we measured support engineers by the number of incidents resolved. Not by complexity, not by impact, not by whether the problem came back. Just by how many were closed. The result was predictable: fast tickets, structural problems intact, and customers calling again.
 
@@ -71,6 +75,8 @@ Every additional line:
 - increases system complexity,
 - raises review effort,
 - and increases future maintenance cost.
+
+![Illustration about code volume and hidden cost](/images/posts/2026-03-15-metricas-equivocadas/scene-3.png)
 
 AI is excellent at producing code quickly.  
 But producing code quickly doesn’t mean producing better systems.
@@ -130,6 +136,8 @@ And then we start optimizing for the wrong metric.
 
 Not for better systems.  
 For prettier charts.
+
+![Illustration about optimizing for the wrong metric](/images/posts/2026-03-15-metricas-equivocadas/scene-4.png)
 
 A mature organization doesn’t only ask how much faster it’s going.  
 It asks what it’s sacrificing to go faster.

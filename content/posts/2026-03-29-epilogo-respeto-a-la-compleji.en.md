@@ -5,12 +5,12 @@ date: 2026-03-29
 categories: [AI, Technology, Culture]
 tags: [AI, Complexity, Critical Thinking, Responsibility]
 description: "Series closing: it’s not fear of AI, it’s respect for complexity."
-featureimage: "/images/posts/2026-03-29-epilogo-respeto-complejidad/feature.svg"
+featureimage: "/images/posts/2026-03-29-epilogo-respeto-complejidad/feature.png"
 ---
 
 # Epilogue: it’s not fear of AI, it’s respect for complexity
 
-![Illustration about navigating complexity](/images/posts/2026-03-29-epilogo-respeto-complejidad/feature.svg)
+![Illustration about navigating complexity](/images/posts/2026-03-29-epilogo-respeto-complejidad/feature.png)
 
 If you’ve made it this far, there’s something worth clarifying before we go on.
 
@@ -37,6 +37,8 @@ It displaces it.
 
 And when complexity is displaced, someone ends up carrying it.
 
+![Illustration about complexity being displaced](/images/posts/2026-03-29-epilogo-respeto-complejidad/scene-1.png)
+
 We’ve also insisted on something that’s worth repeating one last time: this is not a crusade against AI.
 
 AI is extraordinarily useful in many tasks.  
@@ -48,6 +50,8 @@ The problem appears when we extend that trust to domains where decisions have cu
 
 There, it’s not enough that something works.  
 You need to understand why it works, who responds when it stops working, and what we’re sacrificing in exchange.
+
+![Illustration about understanding and responsibility](/images/posts/2026-03-29-epilogo-respeto-complejidad/scene-2.png)
 
 If we take this reflection outside the professional domain, the questions don’t disappear. They multiply.
 
@@ -61,6 +65,8 @@ But they aren’t abstract either.
 
 They are questions about how we coexist with systems that increasingly influence human decisions, without being human.
 
+![Illustration about respecting complexity](/images/posts/2026-03-29-epilogo-respeto-complejidad/scene-4.png)
+
 Hopefully, before long, many of these concerns will become obsolete.  
 Hopefully, AI will understand better, fail less, and integrate more maturely into our organizations and societies.
 
@@ -72,6 +78,8 @@ Because critical thinking isn’t a brake on innovation.
 It’s what makes it sustainable.
 
 And no box, no matter how well it writes, can do that for us.
+
+![Illustration about sustainable innovation](/images/posts/2026-03-29-epilogo-respeto-complejidad/scene-3.png)
 
 ## Conceptual references that appear throughout the series
 

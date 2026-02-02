@@ -5,12 +5,12 @@ date: 2026-02-22
 categories: [AI, Technology, Culture]
 tags: [AI, Responsibility, Governance, Complexity]
 description: "How delegating to AI dilutes responsibility and reshapes who decides in an organization."
-featureimage: "/images/posts/2026-02-22-decisiones-sin-responsable/feature.svg"
+featureimage: "/images/posts/2026-02-22-decisiones-sin-responsable/feature.png"
 ---
 
 # Decisions without an owner: when nobody decides, but someone pays
 
-![Illustration about disconnected decisions](/images/posts/2026-02-22-decisiones-sin-responsable/feature.svg)
+![Illustration about disconnected decisions](/images/posts/2026-02-22-decisiones-sin-responsable/feature.png)
 
 There’s a moment, almost imperceptible, when an organization stops deciding the way it always did and starts doing it differently. There’s no official announcement or internal memo. There’s no clear “before and after.” It’s simply that one day someone proposes an idea and the response is:
 
@@ -22,6 +22,8 @@ Why not do it, if the tool exists, responds fast, and seems to know what it’s 
 The black box with a smile enters the conversation like that—not as explicit authority, but as help. Support. A shortcut.
 
 The problem is that shortcuts, once they become habit, end up redrawing the road.
+
+![Illustration about shortcuts reshaping decisions](/images/posts/2026-02-22-decisiones-sin-responsable/scene-1.png)
 
 ---
 
@@ -49,6 +51,8 @@ This is where decisions come in that aren’t written anywhere:
 - limits you only learn after you’ve crossed them once.
 
 That knowledge doesn’t usually live in official documentation. It lives in people.
+
+![Illustration about tacit knowledge living in people](/images/posts/2026-02-22-decisiones-sin-responsable/scene-2.png)
 
 ---
 
@@ -79,6 +83,8 @@ But many times, that same person:
 
 The equation is dangerous:
 > **diffuse authorship + total responsibility**
+
+![Illustration about diffuse authorship](/images/posts/2026-02-22-decisiones-sin-responsable/scene-3.png)
 
 When that becomes normalized, the organization starts deciding without realizing it no longer really knows who is deciding.
 
@@ -115,6 +121,8 @@ And in too many cases, that someone:
 - didn’t have authority,
 - didn’t have time,
 - but still had to answer.
+
+![Illustration about someone paying the price](/images/posts/2026-02-22-decisiones-sin-responsable/scene-4.png)
 
 ---
 
