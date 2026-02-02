@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,8 +33,30 @@ jobs:
           hugo-version: "0.154.5"
           extended: true
 
+      - name: Pre-publish checks
+        run: hugo --environment production --minify --gc --buildFuture --printI18nWarnings --printPathWarnings --panicOnWarning
+
+  build:
+    runs-on: ubuntu-latest
+    needs: verify
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+          cache: false
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.154.5"
+          extended: true
+
       - name: Build
-        run: hugo --minify
+        run: hugo --environment production --minify --gc --buildFuture
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

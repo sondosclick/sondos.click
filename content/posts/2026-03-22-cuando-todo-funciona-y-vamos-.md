@@ -152,6 +152,8 @@ Porque cuando eso ocurre, el día que deje de funcionar —y dejará de hacerlo�
 ya no sabremos si el problema es la caja, el sistema…  
 o la organización que dejó de hacer preguntas cuando aún estaba a tiempo.
 
+---
+
 {{< smallnote >}}
 **Nota**: Este artículo forma parte de una serie sobre el uso real de la IA en entornos profesionales. A veces, el mayor síntoma de un problema no es el fallo, sino la ausencia de señales claras mientras el deterioro avanza.
 {{< /smallnote >}}

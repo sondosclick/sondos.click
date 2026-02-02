@@ -149,6 +149,8 @@ Si te apetece profundizar un poco más en estas ideas, aquí tienes algunos víd
 
 Esta sección no pretende cerrar ningún debate ni establecer un canon. Es solo un punto de partida para seguir pensando con más contexto y menos ruido.
 
+---
+
 {{< smallnote >}}
 **Nota final**: Esta serie no pretende sentar cátedra ni cerrar discusiones. Pretende abrirlas con un poco más de cuidado, menos hype y más respeto por la complejidad. Si ha servido para que alguien se detenga a pensar antes de pulsar “pídeselo a la IA”, ya ha cumplido su objetivo.
 {{< /smallnote >}}

@@ -168,6 +168,8 @@ la velocidad rara vez es lo más importante.
 
 Aunque quede muy bien en una gráfica.
 
+---
+
 {{< smallnote >}}
 **Nota**: Este artículo forma parte de una serie que cuestiona cómo estamos adoptando la IA en entornos profesionales. Medir es necesario. Medir bien, imprescindible. Elegir mal las métricas no solo da información incorrecta: cambia el comportamiento de toda la organización.
 {{< /smallnote >}}

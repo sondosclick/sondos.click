@@ -25,8 +25,6 @@ The problem is that shortcuts, once they become habit, end up redrawing the road
 
 ![Illustration about shortcuts reshaping decisions](/images/posts/2026-02-22-decisiones-sin-responsable/scene-1.png)
 
----
-
 In many organizations, the first experience with AI is dazzling.  
 An executive uploads a hundreds-page document—a bid, a report, a complex proposal—and in seconds gets a clear summary, a structured analysis, or even an implementation plan. The feeling is immediate: *this works*.
 
@@ -35,8 +33,6 @@ And it does, truly.
 AI is extraordinarily good at synthesis, drafting, reordering language, and framing ideas. That’s home turf. It’s not magic or a trick. It’s exactly what it was trained for.
 
 The problem starts when that experience is extrapolated, almost without noticing, to a completely different kind of work.
-
----
 
 Because not all problems are language problems.
 
@@ -54,8 +50,6 @@ That knowledge doesn’t usually live in official documentation. It lives in peo
 
 ![Illustration about tacit knowledge living in people](/images/posts/2026-02-22-decisiones-sin-responsable/scene-2.png)
 
----
-
 To gain speed, many organizations have made a seemingly logical decision: tell engineers to use AI systematically. Have it write code, generate infrastructure, document systems. The argument is simple: if AI writes faster, the engineer only has to review.
 
 In theory, it’s a clear improvement.
@@ -66,8 +60,6 @@ That’s not cheaper than creating from scratch.
 Often, it’s more expensive.
 
 And still, it’s assumed the engineer should do it in less time, because “AI already did the hard part.”
-
----
 
 Here we hit one of the most important tensions in this whole debate: **responsibility**.
 
@@ -88,8 +80,6 @@ The equation is dangerous:
 
 When that becomes normalized, the organization starts deciding without realizing it no longer really knows who is deciding.
 
----
-
 This model has side effects you won’t see in the short term.
 
 Senior engineers, with more experience, end up acting as system shock absorbers. They’re the ones who correct, refactor, put out fires, and carry the cognitive load of integrating what the box produces. Little by little, their work stops being about design and becomes about last-minute validation.
@@ -100,8 +90,6 @@ The organization, meanwhile, starts assuming that “AI does it better,” shrin
 
 The result isn’t immediate, but it is predictable:  
 less distributed judgment, more dependence on opaque systems, and increasing fragility in the face of change.
-
----
 
 None of this means AI is the problem.
 
@@ -123,8 +111,6 @@ And in too many cases, that someone:
 - but still had to answer.
 
 ![Illustration about someone paying the price](/images/posts/2026-02-22-decisiones-sin-responsable/scene-4.png)
-
----
 
 Maybe in a month the box will do everything perfectly.  
 I hope so.

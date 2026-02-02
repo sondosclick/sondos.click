@@ -168,6 +168,8 @@ speed is rarely the most important thing.
 
 Even if it looks great on a chart.
 
+---
+
 {{< smallnote >}}
 **Note**: This article is part of a series that questions how we’re adopting AI in professional environments. Measuring is necessary. Measuring well is essential. Choosing the wrong metrics doesn’t just give you the wrong information—it changes the behavior of the entire organization.
 {{< /smallnote >}}

@@ -20,7 +20,6 @@ That point is when the **black box with a smile gets it wrong**.
 
 Because it doesn’t get it wrong like we do.
 
----
 
 When a person makes a mistake, the error is usually localized.  
 It has context, history, explanation, and normally bounded consequences. The error is discussed, corrected, and—hopefully—learned from.
@@ -35,7 +34,6 @@ It’s **reproducible**, **scalable**, and, most unsettling, **normalizable**.
 
 ![Illustration about mistakes that scale](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-1.png)
 
----
 
 Let’s go back to a fictional scene, the kind that never happens.
 
@@ -55,7 +53,6 @@ Nothing seems serious. Nothing stands out. Nothing “hits production” like a 
 
 And precisely because of that, nobody stops it.
 
----
 
 Here the most dangerous bias of all kicks in: **normalization bias**.
 
@@ -73,7 +70,6 @@ It **industrializes** them.
 
 ![Illustration about bias becoming a rule](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-2.png)
 
----
 
 There’s something especially perverse about how these errors work.
 
@@ -90,7 +86,6 @@ And precisely because of that, its decisions are accepted with unsettling docili
 
 ![Illustration about frictionless acceptance](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-3.png)
 
----
 
 Here’s a question that rarely gets asked seriously:
 
@@ -101,7 +96,6 @@ how many wrong decisions do we accept simply because the box explains them bette
 
 When a system doesn’t understand but communicates with authority, the risk isn’t just technical. It’s cultural. We start trusting the coherence of the message more than the justice of the result.
 
----
 
 The impact of this isn’t neutral.
 
@@ -119,7 +113,6 @@ And all of it without bad intent, without conspiracies, and without clear villai
 
 Just a box working “reasonably well.”
 
----
 
 There’s another uncomfortable detail: **success amplifies the damage**.
 
@@ -138,7 +131,6 @@ When the box disappoints, the reaction is usually double:
 In neither case do we address the root problem:  
 **we delegated decisions without understanding what we were delegating**.
 
----
 
 Maybe the biggest risk isn’t that the box gets it wrong.  
 That’s inevitable.
@@ -147,7 +139,6 @@ The real risk is that, when it does, we no longer know **how** to argue with it.
 
 Because we’ve lost the habit of questioning its answers, of demanding real explanations, and of assuming the final decision is human—even if it’s suggested by a machine.
 
----
 
 The black box with a smile isn’t evil.  
 But it’s not neutral either.  

@@ -23,8 +23,6 @@ Porque el problema no es decidir **si** usar IA, sino **dónde**, **para qué** 
 
 Aquí es donde conviene abandonar el pensamiento binario —IA sí / IA no— y empezar a hablar de **zonas**.
 
----
-
 Durante años hemos aprendido a trabajar con herramientas potentes poniendo límites. No todo script va directo a producción. No todo cambio se despliega sin revisión. No todo sistema crítico se toca un viernes por la tarde.
 
 Con la IA debería ocurrir algo parecido.
@@ -34,8 +32,6 @@ No porque sea peligrosa en sí misma, sino porque **reduce fricción**. Y cuando
 La caja negra con sonrisa no avisa cuando estás cruzando una línea. Simplemente responde.
 
 ![Ilustracion sobre cruzar una frontera sin aviso](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-1.png)
-
----
 
 ## Zonas donde la IA suele ayudar de verdad
 
@@ -62,8 +58,6 @@ En estas zonas, la IA actúa como **asistente**. Acelera, pero no sustituye el c
 
 ![Ilustracion sobre la IA como asistente](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-2.png)
 
----
-
 ## Zonas donde la IA empieza a estorbar
 
 Hay otras áreas donde el uso de IA introduce más problemas de los que resuelve, especialmente cuando se usa sin límites claros.
@@ -88,8 +82,6 @@ Por ejemplo:
 En estas zonas, la IA deja de ser asistente y empieza a **interferir**, porque produce algo que parece correcto pero requiere una revisión tan profunda que anula cualquier ahorro de tiempo.
 
 ![Ilustracion sobre la IA estorbando](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-3.png)
-
----
 
 ## La frontera real no es técnica: es de probabilidad e impacto
 
@@ -124,8 +116,6 @@ En este segundo caso, el riesgo no está solo en que la IA se equivoque, sino en
 
 Cuando se ignora esta diferencia, se acaba aceptando implícitamente un modelo peligroso: decisiones con bajo coste aparente y alto coste oculto. Y eso no es un problema de tecnología, sino de gestión del riesgo.
 
----
-
 ## El error más común: tratar todas las tareas igual
 
 Muchas organizaciones cometen el mismo error:  
@@ -141,8 +131,6 @@ Cuando eso ocurre, la IA no está ayudando. Está desplazando el problema.
 
 ![Ilustracion sobre costes ocultos](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-4.png)
 
----
-
 ## Un criterio simple (pero incómodo)
 
 Una buena regla práctica podría ser esta:
@@ -152,8 +140,6 @@ Una buena regla práctica podría ser esta:
 
 Si necesitas a alguien con experiencia para validar una decisión,  
 esa experiencia no se puede sustituir con un prompt.
-
----
 
 ## Usar la herramienta para lo que fue diseñada
 

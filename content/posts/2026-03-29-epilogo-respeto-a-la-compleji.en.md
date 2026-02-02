@@ -149,6 +149,8 @@ If you want to explore these ideas further, here are some videos and talks that 
 
 This section doesn’t aim to close any debate or establish a canon. It’s just a starting point to keep thinking with more context and less noise.
 
+---
+
 {{< smallnote >}}
 **Final note**: This series doesn’t aim to lecture or close discussions. It aims to open them with a bit more care, less hype, and more respect for complexity. If it helped someone pause and think before clicking “ask the AI,” it has done its job.
 {{< /smallnote >}}
