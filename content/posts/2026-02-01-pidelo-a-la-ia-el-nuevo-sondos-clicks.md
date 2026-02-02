@@ -37,7 +37,7 @@ si la caja responde en segundos, quizá el problema nunca fue tan complejo.
 
 > **"Spoiler: sí lo era."**
 
-Con el cloud aprendimos esta lección tarde. Provisionar infraestructura resultó ser trivial. Operarla bien, gobernarla y mantenerla en el tiempo… no tanto. Los famosos “dos clics” no eliminaron la complejidad; simplemente la escondieron detrás de una interfaz amable. La dificultad seguía ahí, esperando a que alguien la ignorase lo suficiente.
+Con el cloud aprendimos esta lección tarde. Provisionar infraestructura resultó ser trivial. Provisionarla y operarla bien, gestionarla y mantenerla en el tiempo… **no tanto**. Los famosos “dos clics” no eliminaron la complejidad; simplemente la escondieron detrás de una interfaz amable. La dificultad seguía ahí, esperando a que alguien la ignorase lo suficiente.
 
 Con la IA estamos repitiendo el patrón, solo que ahora la interfaz es lenguaje natural y la caja responde con más confianza que nunca. Antes el mensaje era “no te preocupes, son dos clics”. Ahora es “no te preocupes, pídeselo a la IA”. La tranquilidad es la misma. El riesgo también.
 

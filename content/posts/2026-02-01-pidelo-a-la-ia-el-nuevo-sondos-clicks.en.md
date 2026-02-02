@@ -39,7 +39,7 @@ if the box answers in seconds, maybe the problem was never that complex.
 
 Spoiler: it was.
 
-With cloud we learned this lesson late. Provisioning infrastructure turned out to be trivial. Operating it well, governing it, and sustaining it over time… not so much. The famous “two clicks” didn’t eliminate complexity; they just hid it behind a friendly interface. The difficulty was still there, waiting for someone to ignore it long enough.
+With cloud we learned this lesson late. Provisioning infrastructure turned out to be trivial. Provisioning and operating it well, governing it, and sustaining it over time… **not so much**. The famous “two clicks” didn’t eliminate complexity; they just hid it behind a friendly interface. The difficulty was still there, waiting for someone to ignore it long enough.
 
 
 
