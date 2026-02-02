@@ -25,8 +25,6 @@ El problema es que los atajos, cuando se convierten en costumbre, acaban redibuj
 
 ![Ilustracion sobre atajos que redibujan decisiones](/images/posts/2026-02-22-decisiones-sin-responsable/scene-1.png)
 
----
-
 En muchas organizaciones, la primera experiencia con la IA es deslumbrante.  
 Un directivo sube un documento de cientos de páginas —una licitación, un informe, una propuesta compleja— y en segundos obtiene un resumen claro, un análisis estructurado o incluso un plan de implementación. La sensación es inmediata: *esto funciona*.
 
@@ -35,8 +33,6 @@ Y funciona, de verdad.
 La IA es extraordinariamente buena en tareas de síntesis, redacción, reorganización del lenguaje y framing de ideas. Ahí juega en casa. No es magia ni engaño. Es exactamente para lo que ha sido entrenada.
 
 El problema empieza cuando esa experiencia se extrapola, casi sin darse cuenta, a otro tipo de trabajo completamente distinto.
-
----
 
 Porque no todos los problemas son problemas de lenguaje.
 
@@ -54,8 +50,6 @@ Ese conocimiento no suele estar en la documentación oficial. Vive en las person
 
 ![Ilustracion sobre conocimiento tacito en personas](/images/posts/2026-02-22-decisiones-sin-responsable/scene-2.png)
 
----
-
 Para ganar velocidad, muchas organizaciones han tomado una decisión aparentemente lógica: pedir a los técnicos que usen la IA de forma sistemática. Que escriba código, que genere infraestructura, que documente sistemas. El argumento es sencillo: si la IA escribe más rápido, el técnico solo tiene que revisar.
 
 En teoría, es una mejora clara.
@@ -66,8 +60,6 @@ Eso no es más barato que crear desde cero.
 A menudo, es más caro.
 
 Y, aun así, se asume que el técnico debe hacerlo en menos tiempo, porque “la IA ya ha hecho la parte difícil”.
-
----
 
 Aquí aparece una de las tensiones más importantes de todo este debate: **la responsabilidad**.
 
@@ -88,8 +80,6 @@ La ecuación es peligrosa:
 
 Cuando eso se normaliza, la organización empieza a decidir sin darse cuenta de que ya no sabe muy bien quién está decidiendo.
 
----
-
 Este modelo tiene efectos secundarios que no se ven en el corto plazo.
 
 Los técnicos seniors, con más experiencia, acaban actuando como amortiguadores del sistema. Son quienes corrigen, refactorizan, apagan fuegos y asumen la carga cognitiva de integrar lo que la caja produce. Poco a poco, su trabajo deja de ser diseñar y pasa a ser validar a contrarreloj.
@@ -100,8 +90,6 @@ La organización, mientras tanto, empieza a asumir que “la IA lo hace mejor”
 
 El resultado no es inmediato, pero es previsible:  
 menos criterio distribuido, más dependencia de sistemas opacos y una fragilidad creciente ante cualquier cambio.
-
----
 
 Nada de esto implica que la IA sea el problema.
 
@@ -123,8 +111,6 @@ Y en demasiados casos, ese alguien:
 - pero sí tuvo que responder.
 
 ![Ilustracion sobre quien paga el precio](/images/posts/2026-02-22-decisiones-sin-responsable/scene-4.png)
-
----
 
 Quizá dentro de un mes la caja lo haga todo perfecto.  
 Ojalá.

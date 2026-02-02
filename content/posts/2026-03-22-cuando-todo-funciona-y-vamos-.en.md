@@ -152,6 +152,8 @@ Because when that happens, the day it stops working—and it will—
 we won’t know whether the problem is the box, the system…  
 or the organization that stopped asking questions while it still could.
 
+---
+
 {{< smallnote >}}
 **Note**: This article is part of a series on the real use of AI in professional environments. Sometimes the biggest symptom of a problem isn’t the failure, but the absence of clear signals while deterioration advances.
 {{< /smallnote >}}

@@ -23,8 +23,6 @@ Because the problem isn’t deciding **whether** to use AI, but **where**, **for
 
 This is where it’s useful to abandon binary thinking—AI yes / AI no—and start talking about **zones**.
 
----
-
 For years we’ve learned to work with powerful tools by setting limits. Not every script goes straight to production. Not every change ships without review. Not every critical system is touched on a Friday afternoon.
 
 With AI, something similar should happen.
@@ -34,8 +32,6 @@ Not because it’s dangerous in itself, but because it **removes friction**. And
 The black box with a smile doesn’t warn you when you’re crossing a line. It just answers.
 
 ![Illustration about crossing a boundary without warning](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-1.png)
-
----
 
 ## Zones where AI truly helps
 
@@ -62,8 +58,6 @@ In these zones, AI acts as an **assistant**. It accelerates, but it doesn’t re
 
 ![Illustration about AI as an assistant](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-2.png)
 
----
-
 ## Zones where AI starts to get in the way
 
 There are other areas where AI introduces more problems than it solves, especially when used without clear limits.
@@ -88,8 +82,6 @@ For example:
 In these zones, AI stops being an assistant and starts to **interfere**, because it produces something that looks correct but requires such deep review that any time savings evaporate.
 
 ![Illustration about AI getting in the way](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-3.png)
-
----
 
 ## The real boundary isn’t technical: it’s probability and impact
 
@@ -124,8 +116,6 @@ In the second case, the risk isn’t only that AI gets it wrong, but that the im
 
 When that difference is ignored, we end up implicitly accepting a dangerous model: decisions with low apparent cost and high hidden cost. And that’s not a technology problem—it’s a risk management problem.
 
----
-
 ## The most common mistake: treating all tasks the same
 
 Many organizations make the same mistake:  
@@ -141,8 +131,6 @@ When that happens, AI isn’t helping. It’s moving the problem around.
 
 ![Illustration about hidden costs](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-4.png)
 
----
-
 ## A simple (but uncomfortable) criterion
 
 A good practical rule could be this:
@@ -152,8 +140,6 @@ A good practical rule could be this:
 
 If you need someone experienced to validate a decision,  
 that experience can’t be replaced with a prompt.
-
----
 
 ## Use the tool for what it was designed to do
 

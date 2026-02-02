@@ -20,7 +20,6 @@ Ese punto es cuando la **caja negra con sonrisa se equivoca**.
 
 Porque no se equivoca como nosotros.
 
----
 
 Cuando una persona se equivoca, el error suele ser localizado.  
 Tiene contexto, historia, explicación y, normalmente, consecuencias acotadas. El error se discute, se corrige y, con suerte, se aprende.
@@ -35,7 +34,6 @@ Es **reproducible**, **escalable** y, lo más inquietante, **normalizable**.
 
 ![Ilustracion sobre errores que escalan](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-1.png)
 
----
 
 Volvamos a una escena ficticia, de esas que nunca ocurren.
 
@@ -55,7 +53,6 @@ Nada parece grave. Nada destaca. Nada “salta a producción” como un bug.
 
 Y precisamente por eso, nadie lo detiene.
 
----
 
 Aquí entra en juego el sesgo más peligroso de todos: **el sesgo de normalización**.
 
@@ -73,7 +70,6 @@ Los **industrializa**.
 
 ![Ilustracion sobre el sesgo convertido en regla](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-2.png)
 
----
 
 Hay algo especialmente perverso en cómo funcionan estos errores.
 
@@ -90,7 +86,6 @@ Y precisamente por eso, sus decisiones se aceptan con una docilidad inquietante.
 
 ![Ilustracion sobre la aceptacion sin friccion](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-3.png)
 
----
 
 Aquí aparece una pregunta que rara vez se hace en serio:
 
@@ -101,7 +96,6 @@ O dicho de otra forma:
 
 Cuando un sistema no entiende, pero comunica con autoridad, el riesgo no es solo técnico. Es cultural. Empezamos a confiar más en la coherencia del mensaje que en la justicia del resultado.
 
----
 
 El impacto de esto no es neutro.
 
@@ -119,7 +113,6 @@ Y todo ello sin mala intención, sin conspiraciones y sin villanos claros.
 
 Solo una caja funcionando “razonablemente bien”.
 
----
 
 Hay además otro detalle incómodo: **el éxito amplifica el daño**.
 
@@ -138,7 +131,6 @@ Cuando la caja decepciona, la reacción suele ser doble:
 En ninguno de los dos casos se aborda el problema de fondo:  
 **hemos delegado decisiones sin entender qué estábamos delegando**.
 
----
 
 Quizá el mayor riesgo no sea que la caja se equivoque.  
 Eso es inevitable.
@@ -147,7 +139,6 @@ El verdadero riesgo es que, cuando lo haga, ya no sepamos **cómo** discutirla.
 
 Porque hemos perdido la costumbre de cuestionar sus respuestas, de pedir explicaciones reales y de asumir que la decisión final es humana, aunque venga sugerida por una máquina.
 
----
 
 La caja negra con sonrisa no es malvada.  
 Pero tampoco es neutral.  
