@@ -5,6 +5,7 @@ date: 2026-01-30
 categories: [DevOps, AWS, CLI]
 tags: [AWS, AWS CLI, SSO, SSM, IAM Identity Center, Bash, fzf]
 description: "Toolkit en Bash para cambiar contexto de AWS, sesiones SSM y port-forwarding sin consola."
+featureimage: "/images/posts/2026-01-30-aws-cli-context-toolkit-sso-ssm/feature.svg"
 ---
 
 # aws-bash-toolbox (AWS CLI + SSO + SSM) 🧰

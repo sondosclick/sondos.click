@@ -9,13 +9,16 @@ logo = "images/brand/sondos-logo-symbol.svg"
   layout = "custom"
   showRecent = true
   showRecentItems = 5
-  cardView = true
-  cardViewScreenWidth = true
+  cardView = false
+  cardViewScreenWidth = false
 
 [article]
   showDate = true
   showReadingTime = true
   showTableOfContents = true
+
+[list]
+  showCards = true
 
 [author]
   name = "sondosclicks"
@@ -32,3 +35,4 @@ logo = "images/brand/sondos-logo-symbol.svg"
 [plausible]
   enable = true
   domain = "sondos.click"
+  gitstar = false

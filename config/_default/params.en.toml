@@ -13,3 +13,4 @@
 [plausible]
   enable = true
   domain = "sondos.click"
+  gitstar = false
