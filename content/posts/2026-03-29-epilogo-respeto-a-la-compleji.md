@@ -5,12 +5,12 @@ date: 2026-03-29
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Complejidad, Pensamiento Crítico, Responsabilidad]
 description: "Cierre de la serie: no es miedo a la IA, es respeto por la complejidad."
-featureimage: "/images/posts/2026-03-29-epilogo-respeto-complejidad/feature.svg"
+featureimage: "/images/posts/2026-03-29-epilogo-respeto-complejidad/feature.png"
 ---
 
 # Epílogo: no es miedo a la IA, es respeto por la complejidad
 
-![Ilustracion sobre navegar la complejidad](/images/posts/2026-03-29-epilogo-respeto-complejidad/feature.svg)
+![Ilustracion sobre navegar la complejidad](/images/posts/2026-03-29-epilogo-respeto-complejidad/feature.png)
 
 Si has llegado hasta aquí, hay algo que conviene aclarar antes de seguir.
 
@@ -37,6 +37,8 @@ La desplaza.
 
 Y cuando la complejidad se desplaza, alguien acaba cargando con ella.
 
+![Ilustracion sobre complejidad desplazada](/images/posts/2026-03-29-epilogo-respeto-complejidad/scene-1.png)
+
 También hemos insistido en algo que merece repetirse una última vez: esto no es una cruzada contra la IA.
 
 La IA es extraordinariamente útil en muchas tareas.  
@@ -48,6 +50,8 @@ El problema aparece cuando extendemos esa confianza a ámbitos donde las decisio
 
 Ahí no basta con que algo funcione.  
 Hay que entender por qué funciona, quién responde cuando deja de hacerlo y qué estamos sacrificando a cambio.
+
+![Ilustracion sobre comprension y responsabilidad](/images/posts/2026-03-29-epilogo-respeto-complejidad/scene-2.png)
 
 Si llevamos esta reflexión fuera del ámbito profesional, las preguntas no desaparecen. Se multiplican.
 
@@ -61,6 +65,8 @@ Pero tampoco son abstractas.
 
 Son preguntas sobre cómo convivimos con sistemas que influyen cada vez más en decisiones humanas, sin ser humanos.
 
+![Ilustracion sobre respeto por la complejidad](/images/posts/2026-03-29-epilogo-respeto-complejidad/scene-4.png)
+
 Ojalá dentro de poco tiempo muchas de estas preocupaciones queden obsoletas.  
 Ojalá la IA entienda mejor, falle menos y se integre de forma más madura en nuestras organizaciones y sociedades.
 
@@ -72,6 +78,8 @@ Porque el pensamiento crítico no es un freno a la innovación.
 Es lo que la hace sostenible.
 
 Y ninguna caja, por muy bien que escriba, puede hacer eso por nosotros.
+
+![Ilustracion sobre innovacion sostenible](/images/posts/2026-03-29-epilogo-respeto-complejidad/scene-3.png)
 
 ## Referencias conceptuales que aparecen a lo largo de la serie
 

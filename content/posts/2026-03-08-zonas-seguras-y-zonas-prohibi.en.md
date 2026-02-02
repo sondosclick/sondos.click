@@ -5,12 +5,12 @@ date: 2026-03-08
 categories: [AI, Technology, Culture]
 tags: [AI, Risk, Decisions, Automation]
 description: "A practical map to decide where AI adds value and where it can get in the way."
-featureimage: "/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.svg"
+featureimage: "/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.png"
 ---
 
 # Safe zones and forbidden zones: where AI helps and where it gets in the way
 
-![Illustration of safe zones and limits](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.svg)
+![Illustration of safe zones and limits](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.png)
 
 After talking about simplification, authority, bias, and responsibility, a reasonable reaction shows up:
 
@@ -32,6 +32,8 @@ With AI, something similar should happen.
 Not because it’s dangerous in itself, but because it **removes friction**. And when friction disappears, many warning signals disappear with it.
 
 The black box with a smile doesn’t warn you when you’re crossing a line. It just answers.
+
+![Illustration about crossing a boundary without warning](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-1.png)
 
 ---
 
@@ -58,6 +60,8 @@ For example:
 
 In these zones, AI acts as an **assistant**. It accelerates, but it doesn’t replace judgment.
 
+![Illustration about AI as an assistant](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-2.png)
+
 ---
 
 ## Zones where AI starts to get in the way
@@ -82,6 +86,8 @@ For example:
   The longer the system’s life, the more expensive an early design mistake becomes.
 
 In these zones, AI stops being an assistant and starts to **interfere**, because it produces something that looks correct but requires such deep review that any time savings evaporate.
+
+![Illustration about AI getting in the way](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-3.png)
 
 ---
 
@@ -132,6 +138,8 @@ Eliminating visible effort can multiply invisible effort.
 Speeding up output can slow down learning.
 
 When that happens, AI isn’t helping. It’s moving the problem around.
+
+![Illustration about hidden costs](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-4.png)
 
 ---
 

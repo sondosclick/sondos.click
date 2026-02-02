@@ -5,12 +5,12 @@ date: 2026-02-08
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Pensamiento Crítico, Complejidad, Autoridad]
 description: "Por qué la seguridad con la que responde la IA no implica comprensión y cómo eso nos lleva a obedecerla."
-featureimage: "/images/posts/2026-02-08-la-ia-no-entiende/feature.svg"
+featureimage: "/images/posts/2026-02-08-la-ia-no-entiende/feature.png"
 ---
 
 # La IA no entiende (y por qué seguimos obedeciéndola)
 
-![Ilustracion sobre respuestas seguras sin comprension](/images/posts/2026-02-08-la-ia-no-entiende/feature.svg)
+![Ilustracion sobre respuestas seguras sin comprension](/images/posts/2026-02-08-la-ia-no-entiende/feature.png)
 
 Si algo hemos aprendido rápido sobre la IA es que **responde con mucha seguridad**.  
 No duda, no titubea y rara vez dice “no lo sé” de forma incómoda. Contesta con frases bien estructuradas, argumentos ordenados y un tono que inspira confianza.
@@ -33,6 +33,8 @@ No entiende responsabilidad.
 
 La caja solo calcula qué respuesta es más probable dadas unas entradas. Nada más. Nada menos.
 
+![Ilustracion sobre delegar decisiones en la caja](/images/posts/2026-02-08-la-ia-no-entiende/scene-1.png)
+
 Y aun así, cada día, le pedimos decisiones.
 
 Imaginemos otra escena completamente ficticia.
@@ -50,6 +52,8 @@ Sino cuando **nadie se sintió responsable de contradecir la respuesta**.
 
 La caja no decidió.  
 Pero todos actuaron como si lo hubiera hecho.
+
+![Ilustracion sobre la ilusion de neutralidad](/images/posts/2026-02-08-la-ia-no-entiende/scene-2.png)
 
 Aquí aparece una ilusión especialmente peligrosa: la de la **neutralidad**.
 
@@ -78,6 +82,8 @@ Poco a poco, el criterio humano deja de ser el centro y pasa a ser un mecanismo 
 
 Y a veces, ni eso.
 
+![Ilustracion sobre el criterio como validacion superficial](/images/posts/2026-02-08-la-ia-no-entiende/scene-3.png)
+
 Este desplazamiento tiene consecuencias que van más allá de lo técnico.
 
 A nivel organizativo, diluye la responsabilidad.  
@@ -92,6 +98,8 @@ Quizá por eso resulta tan tentador el mensaje de *“pídeselo a la IA”*.
 No solo promete eficiencia. Promete alivio. Alivio de pensar, de discutir, de asumir el peso de decidir.
 
 La caja sonríe, responde y nos permite seguir adelante sin fricción.
+
+![Ilustracion sobre el alivio de obedecer a la caja](/images/posts/2026-02-08-la-ia-no-entiende/scene-4.png)
 
 Pero cada vez que obedecemos sin entender, entrenamos algo más peligroso que un modelo:  
 entrenamos nuestra propia **renuncia al criterio**.

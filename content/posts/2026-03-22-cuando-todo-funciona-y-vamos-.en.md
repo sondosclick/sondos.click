@@ -5,12 +5,12 @@ date: 2026-03-22
 categories: [AI, Technology, Culture]
 tags: [AI, Risk, Operations, Complexity]
 description: "What happens when everything looks fine but the system is degrading underneath."
-featureimage: "/images/posts/2026-03-22-cuando-todo-funciona/feature.svg"
+featureimage: "/images/posts/2026-03-22-cuando-todo-funciona/feature.png"
 ---
 
 # When everything works… and we’re still going wrong
 
-![Illustration of green indicators and wear](/images/posts/2026-03-22-cuando-todo-funciona/feature.svg)
+![Illustration of green indicators and wear](/images/posts/2026-03-22-cuando-todo-funciona/feature.png)
 
 There are few moments more dangerous in a tech organization than the one where everything seems fine.
 
@@ -37,6 +37,8 @@ If the AI answers well, why challenge it?
 The box’s smile is calming.  
 And calm, in complex systems, is often deceptive.
 
+![Illustration about calm masking deterioration](/images/posts/2026-03-22-cuando-todo-funciona/scene-1.png)
+
 Let’s imagine a situation that, as always, doesn’t happen in real life.
 
 A team has been using AI for months. The pace is good. Things ship. Times have gone down. Juniors are productive. Seniors review quickly. Nobody seems especially stressed.
@@ -52,6 +54,8 @@ and the phrase “AI generated this” shows up more and more.
 None of that is critical. Yet.
 
 The problem with systems that “work” is that **they hide deterioration**.
+
+![Illustration about hidden deterioration](/images/posts/2026-03-22-cuando-todo-funciona/scene-2.png)
 
 Technical debt doesn’t usually break anything all at once.  
 It accumulates quietly.
@@ -83,6 +87,8 @@ It confuses stability with understanding,
 the absence of visible errors with quality,  
 speed with maturity,  
 and functioning with health.
+
+![Illustration about stability mistaken for understanding](/images/posts/2026-03-22-cuando-todo-funciona/scene-3.png)
 
 But a system can function for a long time without being healthy.
 
@@ -136,6 +142,8 @@ But if we only celebrate that everything works, without asking **why it works**,
 
 The black box with a smile is very good at making things move forward.  
 It’s not good at ensuring we move in the right direction.
+
+![Illustration about moving fast in the wrong direction](/images/posts/2026-03-22-cuando-todo-funciona/scene-4.png)
 
 The real risk isn’t that AI fails.  
 The real risk is getting used to everything working without understanding it.

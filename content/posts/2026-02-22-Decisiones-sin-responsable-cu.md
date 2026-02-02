@@ -5,12 +5,12 @@ date: 2026-02-22
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Responsabilidad, Gobernanza, Complejidad]
 description: "Cómo delegar en la IA diluye la responsabilidad y redefine quién decide en una organización."
-featureimage: "/images/posts/2026-02-22-decisiones-sin-responsable/feature.svg"
+featureimage: "/images/posts/2026-02-22-decisiones-sin-responsable/feature.png"
 ---
 
 # Decisiones sin responsable: cuando nadie decide, pero alguien paga
 
-![Ilustracion sobre decisiones desconectadas](/images/posts/2026-02-22-decisiones-sin-responsable/feature.svg)
+![Ilustracion sobre decisiones desconectadas](/images/posts/2026-02-22-decisiones-sin-responsable/feature.png)
 
 Hay un momento, casi imperceptible, en el que una organización deja de decidir como siempre lo había hecho y empieza a hacerlo de otra forma. No hay anuncio oficial ni comunicado interno. No hay un “antes y después” claro. Simplemente, un día, alguien propone una idea y la respuesta es:
 
@@ -22,6 +22,8 @@ Al principio suena razonable. Incluso sensato.
 La caja negra con sonrisa entra así en la conversación, no como una autoridad explícita, sino como una ayuda. Un apoyo. Un atajo.
 
 El problema es que los atajos, cuando se convierten en costumbre, acaban redibujando el camino.
+
+![Ilustracion sobre atajos que redibujan decisiones](/images/posts/2026-02-22-decisiones-sin-responsable/scene-1.png)
 
 ---
 
@@ -49,6 +51,8 @@ Ahí entran en juego decisiones que no siempre están escritas en ningún sitio:
 - límites que solo se conocen después de haberlos cruzado una vez.
 
 Ese conocimiento no suele estar en la documentación oficial. Vive en las personas.
+
+![Ilustracion sobre conocimiento tacito en personas](/images/posts/2026-02-22-decisiones-sin-responsable/scene-2.png)
 
 ---
 
@@ -79,6 +83,8 @@ Pero muchas veces, esa misma persona:
 
 La ecuación es peligrosa:
 > **autoría difusa + responsabilidad total**
+
+![Ilustracion sobre autoria difusa](/images/posts/2026-02-22-decisiones-sin-responsable/scene-3.png)
 
 Cuando eso se normaliza, la organización empieza a decidir sin darse cuenta de que ya no sabe muy bien quién está decidiendo.
 
@@ -115,6 +121,8 @@ Y en demasiados casos, ese alguien:
 - no tuvo autoridad,
 - no tuvo tiempo,
 - pero sí tuvo que responder.
+
+![Ilustracion sobre quien paga el precio](/images/posts/2026-02-22-decisiones-sin-responsable/scene-4.png)
 
 ---
 

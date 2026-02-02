@@ -5,12 +5,12 @@ date: 2026-03-22
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Riesgo, Operaciones, Complejidad]
 description: "Qué pasa cuando todo parece ir bien, pero el sistema se está degradando por debajo."
-featureimage: "/images/posts/2026-03-22-cuando-todo-funciona/feature.svg"
+featureimage: "/images/posts/2026-03-22-cuando-todo-funciona/feature.png"
 ---
 
 # Cuando todo funciona… y aun así vamos mal
 
-![Ilustracion sobre indicadores en verde y desgaste](/images/posts/2026-03-22-cuando-todo-funciona/feature.svg)
+![Ilustracion sobre indicadores en verde y desgaste](/images/posts/2026-03-22-cuando-todo-funciona/feature.png)
 
 Hay pocos momentos más peligrosos en una organización tecnológica que aquel en el que todo parece ir bien.
 
@@ -37,6 +37,8 @@ Si la IA responde bien, ¿para qué discutirle?
 La sonrisa de la caja tranquiliza.  
 Y la tranquilidad, en sistemas complejos, suele ser engañosa.
 
+![Ilustracion sobre calma que oculta deterioro](/images/posts/2026-03-22-cuando-todo-funciona/scene-1.png)
+
 Imaginemos una situación que, como siempre, no ocurre en la realidad.
 
 Un equipo lleva meses usando IA. El ritmo es bueno. Se entregan cosas. Los tiempos han bajado. Los juniors son productivos. Los seniors revisan rápido. Nadie parece especialmente estresado.
@@ -52,6 +54,8 @@ y la frase “esto lo generó la IA” aparece cada vez más a menudo.
 Nada de eso es crítico. Todavía.
 
 El problema de los sistemas que “funcionan” es que **ocultan el deterioro**.
+
+![Ilustracion sobre deterioro oculto](/images/posts/2026-03-22-cuando-todo-funciona/scene-2.png)
 
 La deuda técnica no suele romper nada de golpe.  
 Se acumula silenciosamente.
@@ -83,6 +87,8 @@ Confunde estabilidad con comprensión,
 ausencia de errores visibles con calidad,  
 velocidad con madurez,  
 y funcionamiento con salud.
+
+![Ilustracion sobre estabilidad confundida con comprension](/images/posts/2026-03-22-cuando-todo-funciona/scene-3.png)
 
 Pero un sistema puede funcionar durante mucho tiempo sin estar sano.
 
@@ -136,6 +142,8 @@ Pero si solo celebramos que todo funcione, sin preguntarnos **por qué funciona*
 
 La caja negra con sonrisa es muy buena haciendo que las cosas avancen.  
 No lo es garantizando que avancemos en la dirección correcta.
+
+![Ilustracion sobre avanzar rapido en la direccion equivocada](/images/posts/2026-03-22-cuando-todo-funciona/scene-4.png)
 
 El verdadero riesgo no es que la IA falle.  
 El verdadero riesgo es acostumbrarnos a que todo funcione sin comprenderlo.

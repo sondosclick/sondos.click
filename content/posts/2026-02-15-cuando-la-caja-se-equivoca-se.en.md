@@ -5,12 +5,12 @@ date: 2026-02-15
 categories: [AI, Technology, Culture]
 tags: [AI, Bias, Scale, Risk]
 description: "What happens when AI makes mistakes at scale and its biases become the norm."
-featureimage: "/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.svg"
+featureimage: "/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.png"
 ---
 
 # When the box gets it wrong: bias, scale, and normalization
 
-![Illustration about amplified mistakes](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.svg)
+![Illustration about amplified mistakes](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/feature.png)
 
 So far we’ve talked about simplification and authority.  
 About “ask the AI” and why we obey something that doesn’t understand.  
@@ -32,6 +32,8 @@ It’s not isolated.
 It’s not visible.
 
 It’s **reproducible**, **scalable**, and, most unsettling, **normalizable**.
+
+![Illustration about mistakes that scale](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-1.png)
 
 ---
 
@@ -69,6 +71,8 @@ And it isn’t corrected because nobody feels they decided it.
 The box doesn’t just inherit biases.  
 It **industrializes** them.
 
+![Illustration about bias becoming a rule](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-2.png)
+
 ---
 
 There’s something especially perverse about how these errors work.
@@ -83,6 +87,8 @@ It doesn’t raise its voice.
 It doesn’t look unfair.
 
 And precisely because of that, its decisions are accepted with unsettling docility.
+
+![Illustration about frictionless acceptance](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-3.png)
 
 ---
 
@@ -146,6 +152,8 @@ Because we’ve lost the habit of questioning its answers, of demanding real exp
 The black box with a smile isn’t evil.  
 But it’s not neutral either.  
 And it’s certainly not innocent.
+
+![Illustration about normalized errors](/images/posts/2026-02-15-cuando-la-caja-se-equivoca/scene-4.png)
 
 Every time we accept its errors as “things that happen,” we train something deeper than a model:  
 we train a culture where **convenience outweighs judgment**.

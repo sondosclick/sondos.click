@@ -5,12 +5,12 @@ date: 2026-03-01
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Aprendizaje, Talento, Complejidad]
 description: "El riesgo de que una generación aprenda a ejecutar sin entender en la era de la IA."
-featureimage: "/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.svg"
+featureimage: "/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.png"
 ---
 
 # Juniors, aprendizaje y el riesgo de una generación que no entiende lo que funciona
 
-![Ilustracion sobre aprendizaje por capas](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.svg)
+![Ilustracion sobre aprendizaje por capas](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/feature.png)
 
 Toda generación aprende con las herramientas que tiene a mano.  
 Nosotros aprendimos con buscadores, foros, documentación incompleta y respuestas que empezaban con “esto no es buena práctica, pero…”.
@@ -28,6 +28,8 @@ No prueban hipótesis. Esperan respuestas.
 La caja negra con sonrisa está siempre disponible, no se cansa, no juzga y responde con una seguridad envidiable. Le preguntas algo y te devuelve código, explicaciones y hasta comentarios bien redactados. A veces incluso añade emojis, por si dudabas de su buena intención.
 
 Y, para incomodidad de muchos seniors, **muchas veces funciona**.
+
+![Ilustracion sobre respuestas que parecen funcionar](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/scene-1.png)
 
 Aquí conviene aclarar algo desde el principio, para evitar malentendidos:  
 los juniors **no son víctimas inocentes** de esta situación.
@@ -47,6 +49,8 @@ Lo hace más cómodo.
 Ahora el código no viene de un hilo caótico de Stack Overflow, sino de una respuesta elegante, estructurada y aparentemente razonada. Ya no hay variables con nombres crípticos ni comentarios en ruso. Todo parece limpio. Profesional. Confiable.
 
 Y eso es precisamente lo peligroso.
+
+![Ilustracion sobre respuestas pulidas que ocultan riesgo](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/scene-2.png)
 
 El junior ejecuta el código, pasa los tests básicos y ve que todo funciona. Sonríe. La caja también. Se hace el commit. Se avanza.
 
@@ -72,6 +76,8 @@ Se construye a base de:
 - investigar causas,
 - comparar alternativas,
 - y asumir las consecuencias de las decisiones.
+
+![Ilustracion sobre criterio construido con experiencia](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/scene-3.png)
 
 Cuando ese proceso se sustituye por una interacción constante con la caja, el junior aprende a *operar la herramienta*, pero no necesariamente a *pensar el sistema*.
 
@@ -119,6 +125,8 @@ pero dudan cuando algo se sale del guion.
 
 Una generación que sabe hablar con la caja,  
 pero no discutirle.
+
+![Ilustracion sobre dependencia de la caja](/images/posts/2026-03-01-juniors-aprendizaje-y-riesgo/scene-4.png)
 
 Y cuando dentro de unos años necesitemos seniors con criterio,  
 con memoria de errores pasados  

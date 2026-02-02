@@ -5,12 +5,12 @@ date: 2026-03-08
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Riesgo, Decisiones, Automatización]
 description: "Un mapa práctico para decidir dónde la IA aporta valor y dónde puede estorbar."
-featureimage: "/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.svg"
+featureimage: "/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.png"
 ---
 
 # Zonas seguras y zonas prohibidas: dónde la IA ayuda y dónde estorba
 
-![Ilustracion de zonas seguras y limites](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.svg)
+![Ilustracion de zonas seguras y limites](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/feature.png)
 
 Después de hablar de simplificación, autoridad, sesgos y responsabilidad, suele aparecer una reacción comprensible:
 
@@ -32,6 +32,8 @@ Con la IA debería ocurrir algo parecido.
 No porque sea peligrosa en sí misma, sino porque **reduce fricción**. Y cuando la fricción desaparece, también lo hacen muchas señales de alerta.
 
 La caja negra con sonrisa no avisa cuando estás cruzando una línea. Simplemente responde.
+
+![Ilustracion sobre cruzar una frontera sin aviso](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-1.png)
 
 ---
 
@@ -58,6 +60,8 @@ Por ejemplo:
 
 En estas zonas, la IA actúa como **asistente**. Acelera, pero no sustituye el criterio.
 
+![Ilustracion sobre la IA como asistente](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-2.png)
+
 ---
 
 ## Zonas donde la IA empieza a estorbar
@@ -82,6 +86,8 @@ Por ejemplo:
   Cuanto más larga es la vida del sistema, más caro es un error de diseño inicial.
 
 En estas zonas, la IA deja de ser asistente y empieza a **interferir**, porque produce algo que parece correcto pero requiere una revisión tan profunda que anula cualquier ahorro de tiempo.
+
+![Ilustracion sobre la IA estorbando](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-3.png)
 
 ---
 
@@ -132,6 +138,8 @@ Eliminar esfuerzo visible puede multiplicar esfuerzo invisible.
 Acelerar la producción puede ralentizar el aprendizaje.
 
 Cuando eso ocurre, la IA no está ayudando. Está desplazando el problema.
+
+![Ilustracion sobre costes ocultos](/images/posts/2026-03-08-zonas-seguras-y-zonas-prohibidas/scene-4.png)
 
 ---
 

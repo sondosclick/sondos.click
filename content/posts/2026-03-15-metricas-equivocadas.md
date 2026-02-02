@@ -5,12 +5,12 @@ date: 2026-03-15
 categories: [IA, Tecnología, Cultura]
 tags: [IA, Métricas, Productividad, Complejidad]
 description: "Por qué medir velocidad con IA nos aleja del valor y aumenta la complejidad."
-featureimage: "/images/posts/2026-03-15-metricas-equivocadas/feature.svg"
+featureimage: "/images/posts/2026-03-15-metricas-equivocadas/feature.png"
 ---
 
 # Métricas equivocadas: por qué medir velocidad nos está llevando al lugar equivocado
 
-![Ilustracion de graficas en conflicto](/images/posts/2026-03-15-metricas-equivocadas/feature.svg)
+![Ilustracion de graficas en conflicto](/images/posts/2026-03-15-metricas-equivocadas/feature.png)
 
 Si algo nos gusta en tecnología casi tanto como una herramienta nueva, es medirla.  
 Y si algo nos tranquiliza más que medir, es ver una gráfica subir hacia la derecha.
@@ -33,6 +33,8 @@ La caja negra con sonrisa también.
 Y alguien dice la frase mágica:  
 > “¿Ves? Funciona.”
 
+![Ilustracion sobre la ilusion de las graficas en alza](/images/posts/2026-03-15-metricas-equivocadas/scene-1.png)
+
 El problema es que estamos midiendo lo fácil, no lo importante.
 
 Medimos velocidad porque es visible.  
@@ -50,6 +52,8 @@ Eso no cabe bien en un KPI.
 
 Este error no es nuevo.  
 Lo llevamos cometiendo décadas, solo que ahora lo estamos automatizando.
+
+![Ilustracion sobre medir lo facil y no lo importante](/images/posts/2026-03-15-metricas-equivocadas/scene-2.png)
 
 Durante años hemos medido a los técnicos de soporte por el número de incidencias resueltas. No por su complejidad, ni por su impacto, ni por si el problema volvió a aparecer. Solo por cuántas se cerraban. El resultado fue previsible: tickets rápidos, problemas estructurales intactos y clientes que volvían a llamar.
 
@@ -71,6 +75,8 @@ Cada línea adicional:
 - aumenta la complejidad del sistema,
 - incrementa el esfuerzo de revisión,
 - y eleva el coste de mantenimiento futuro.
+
+![Ilustracion sobre volumen de codigo y coste oculto](/images/posts/2026-03-15-metricas-equivocadas/scene-3.png)
 
 La IA es excelente produciendo código rápidamente.  
 Pero producir código rápido no equivale a producir sistemas mejores.
@@ -130,6 +136,8 @@ Y entonces empezamos a optimizar para la métrica equivocada.
 
 No para sistemas mejores.  
 Para gráficos más bonitos.
+
+![Ilustracion sobre optimizar la metrica equivocada](/images/posts/2026-03-15-metricas-equivocadas/scene-4.png)
 
 Una organización madura no se pregunta solo cuánto más rápido va.  
 Se pregunta qué está sacrificando para ir más rápido.

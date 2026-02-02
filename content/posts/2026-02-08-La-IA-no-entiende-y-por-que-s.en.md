@@ -5,12 +5,12 @@ date: 2026-02-08
 categories: [AI, Technology, Culture]
 tags: [AI, Critical Thinking, Complexity, Authority]
 description: "Why the confidence in AI answers doesn’t imply understanding—and how that leads us to obey it."
-featureimage: "/images/posts/2026-02-08-la-ia-no-entiende/feature.svg"
+featureimage: "/images/posts/2026-02-08-la-ia-no-entiende/feature.png"
 ---
 
 # AI doesn’t understand (and why we keep obeying it)
 
-![Illustration about confident answers without understanding](/images/posts/2026-02-08-la-ia-no-entiende/feature.svg)
+![Illustration about confident answers without understanding](/images/posts/2026-02-08-la-ia-no-entiende/feature.png)
 
 If there’s one thing we’ve learned quickly about AI, it’s that it **answers with a lot of confidence**.  
 It doesn’t hesitate, doesn’t stutter, and rarely says “I don’t know” in an awkward way. It responds with well-structured sentences, tidy arguments, and a tone that inspires trust.
@@ -33,6 +33,8 @@ It doesn’t understand responsibility.
 
 The box only calculates which response is most probable given some inputs. Nothing more. Nothing less.
 
+![Illustration about delegating decisions to the box](/images/posts/2026-02-08-la-ia-no-entiende/scene-1.png)
+
 And yet, every day, we ask it for decisions.
 
 Let’s imagine another completely fictional scene.
@@ -50,6 +52,8 @@ But when **no one felt responsible for contradicting the answer**.
 
 The box didn’t decide.  
 But everyone acted as if it had.
+
+![Illustration about the neutrality illusion](/images/posts/2026-02-08-la-ia-no-entiende/scene-2.png)
 
 Here a particularly dangerous illusion appears: **neutrality**.
 
@@ -78,6 +82,8 @@ Little by little, human judgment stops being the center and becomes a superficia
 
 And sometimes, not even that.
 
+![Illustration about judgment becoming superficial validation](/images/posts/2026-02-08-la-ia-no-entiende/scene-3.png)
+
 This shift has consequences that go beyond the technical.
 
 At an organizational level, it dilutes responsibility.  
@@ -92,6 +98,8 @@ Maybe that’s why the message *“ask the AI”* is so tempting.
 It doesn’t just promise efficiency. It promises relief. Relief from thinking, from debating, from carrying the weight of deciding.
 
 The box smiles, answers, and lets us move on without friction.
+
+![Illustration about the relief of obeying the box](/images/posts/2026-02-08-la-ia-no-entiende/scene-4.png)
 
 But every time we obey without understanding, we train something more dangerous than a model:  
 we train our own **surrender of judgment**.
