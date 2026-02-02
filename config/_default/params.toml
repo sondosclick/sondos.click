@@ -30,7 +30,7 @@ logo = "images/brand/sondos-logo-symbol.svg"
   github = "https://github.com/sondosclick"
 
 [[author.links]]
-  linkedin = "https://www.linkedin.com/"
+  linkedin = "https://www.linkedin.com/in/roque-rivera"
 
 [plausible]
   enable = true
