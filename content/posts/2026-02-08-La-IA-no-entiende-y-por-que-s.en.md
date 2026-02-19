@@ -19,7 +19,7 @@ It’s the **black box with a smile** at full power.
 
 And that’s where the problem begins.
 
-Because one thing is for a system to generate convincing answers, and another very different thing is to **understand** what it’s saying. Confusing the two is convenient. It’s also dangerous.
+Because one thing is for a system to generate convincing answers, and another very different thing is to **understand** what it’s saying. Confusing the two is convenient. **It’s also dangerous.**
 
 For years, we’ve associated authority with language.  
 Whoever explains well, articulates ideas clearly, answers quickly… tends to seem competent. AI plays exactly with that human heuristic. It speaks well, so it must know what it’s talking about. It smiles—metaphorically—so we can trust it.
