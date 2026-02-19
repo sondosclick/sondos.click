@@ -19,7 +19,7 @@ Es la **caja negra con sonrisa** en su máximo esplendor.
 
 Y ahí empieza el problema.
 
-Porque una cosa es que un sistema genere respuestas convincentes y otra muy distinta es que **entienda** lo que está diciendo. Confundir ambas cosas es cómodo. También es peligroso.
+Porque una cosa es que un sistema genere respuestas convincentes y otra muy distinta es que **entienda** lo que está diciendo. Confundir ambas cosas es cómodo. **También es peligroso.**
 
 Durante años hemos asociado la autoridad al lenguaje.  
 Quien explica bien, quien articula ideas con claridad, quien responde rápido… suele parecer competente. La IA juega exactamente con esa heurística humana. Habla bien, luego debe saber de lo que habla. Sonríe —metafóricamente—, luego podemos confiar.
