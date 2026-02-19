@@ -50,14 +50,14 @@ That knowledge doesn’t usually live in official documentation. It lives in peo
 
 ![Illustration about tacit knowledge living in people](/images/posts/2026-02-22-decisiones-sin-responsable/scene-2.png)
 
-To gain speed, many organizations have made a seemingly logical decision: tell engineers to use AI systematically. Have it write code, generate infrastructure, document systems. The argument is simple: if AI writes faster, the engineer only has to review.
+To gain speed, many organizations have made a seemingly logical decision: tell engineers to use AI systematically. Have it write code, generate infrastructure, document systems. The argument is simple: if AI writes faster, **the engineer only has to review.**
 
 In theory, it’s a clear improvement.
 
-In practice, reviewing is not reading. Reviewing is **deeply understanding something you didn’t design**, detecting implicit assumptions, reconstructing decisions no one explained, and verifying everything fits into a system that existed before the box wrote a single line.
+In practice, **reviewing is not reading.** Reviewing is **deeply understanding something you didn’t design**, detecting implicit assumptions, reconstructing decisions no one explained, and verifying everything fits into a system that existed before the box wrote a single line.
 
-That’s not cheaper than creating from scratch.  
-Often, it’s more expensive.
+> "That’s not cheaper than creating from scratch.  
+> Often, it’s more expensive."
 
 And still, it’s assumed the engineer should do it in less time, because “AI already did the hard part.”
 
@@ -71,7 +71,7 @@ But many times, that same person:
 - hasn’t had real authority to say “no,”
 - hasn’t been able to set boundaries for AI use,
 - hasn’t had enough time to review with judgment,
-- and has worked under explicit pressure to go faster.
+- **and has worked under explicit pressure to go faster.**
 
 The equation is dangerous:
 > **diffuse authorship + total responsibility**
@@ -84,11 +84,11 @@ This model has side effects you won’t see in the short term.
 
 Senior engineers, with more experience, end up acting as system shock absorbers. They’re the ones who correct, refactor, put out fires, and carry the cognitive load of integrating what the box produces. Little by little, their work stops being about design and becomes about last-minute validation.
 
-Juniors, on the other hand, learn to interact with AI before they’ve built their own judgment. They ask, get answers, and see that things work… without understanding why. And when something works without understanding, there’s no learning. Only dependency.
+Juniors, on the other hand, learn to interact with AI before they’ve built their own judgment. They ask, get answers, and see that things work… **without understanding why.** And when something works without understanding, there’s no learning. **Only dependency.**
 
 The organization, meanwhile, starts assuming that “AI does it better,” shrinking learning spaces right where generational handoff is formed.
 
-The result isn’t immediate, but it is predictable:  
+**The result isn’t immediate, but it is predictable:**  
 less distributed judgment, more dependence on opaque systems, and increasing fragility in the face of change.
 
 None of this means AI is the problem.
