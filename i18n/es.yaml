@@ -1,5 +1,13 @@
 term:
   no_articles: "Aun no hay articulos para este termino."
 
+error:
+  404_home: "Volver al inicio"
+
+nav:
+  close_menu: "Cerrar menú"
+  main_menu: "Menú principal"
+  mobile_menu: "Menú móvil"
+
 plausible_gitstar:
   other: "*** Por favor, considera dejar una estrella en Github si te gusta este modulo plausible-hugo.\n Quita este aviso agregando 'gitstar = false' en tu configuracion de plausible"

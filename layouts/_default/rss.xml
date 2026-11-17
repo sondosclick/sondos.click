@@ -14,7 +14,7 @@
     <link>{{ .Permalink }}</link>
     <description>{{ .Description | default (printf "Recent content in %s" .Title) }}</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>{{ site.Language.LanguageCode }}</language>
+    <language>{{ site.Language.Locale }}</language>
     {{- with site.Copyright }}
     <copyright>{{ . }}</copyright>
     {{- end }}

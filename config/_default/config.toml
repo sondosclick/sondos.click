@@ -6,20 +6,20 @@ defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.es]
-    languageCode = "es"
-    languageName = "ES"
+    locale = "es"
+    label = "ES"
     weight = 1
     [languages.es.params]
       displayName = "ES"
   [languages.en]
-    languageCode = "en"
-    languageName = "EN"
+    locale = "en"
+    label = "EN"
     weight = 2
     [languages.en.params]
       displayName = "EN"
 
 [module]
   [[module.imports]]
-    path = "github.com/nunocoracao/blowfish/v2"
+    path = "github.com/nunocoracao/blowfish/v3"
   [[module.imports]]
     path = "github.com/divinerites/plausible-hugo"
